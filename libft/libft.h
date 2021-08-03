@@ -4,7 +4,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_atoi(const char *str);
+long int		ft_atoi(const char *str);
 void	ft_bzero(void *array, size_t bytes);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);

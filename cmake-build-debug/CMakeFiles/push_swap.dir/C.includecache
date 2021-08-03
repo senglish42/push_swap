@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sedgekins/42/push_swap/libft/libft.h
+stdlib.h
+-
+unistd.h
+-
+
+/home/sedgekins/42/push_swap/push_swap.h
+libft/libft.h
+/home/sedgekins/42/push_swap/libft/libft.h
+
+/home/sedgekins/42/push_swap/src/ft_compare.c
+../push_swap.h
+/home/sedgekins/42/push_swap/push_swap.h
+

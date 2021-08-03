@@ -1,10 +1,10 @@
 #include "../libft/libft.h"
 
-int	ft_atoi(const char *str)
+long int	ft_atoi(const char *str)
 {
 	int	a;
-	int	b;
-	int	c;
+	long int	b;
+	long int	c;
 
 	a = 0;
 	b = 1;
@@ -19,10 +19,7 @@ int	ft_atoi(const char *str)
 		a++;
 	}
 	while (str[a] >= 48 && str[a] <= 57)
-	{
-		c = c * 10 + ((str[a] - 48));
-		a++;
-	}
+		c = c * 10 + ((str[a++] - 48));
 	c = b * c;
 	return (c);
 }
