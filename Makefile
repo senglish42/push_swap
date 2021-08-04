@@ -11,7 +11,7 @@ LIBFT	=	libft/ft_memchr.c		libft/ft_strlen.c\
 			libft/ft_itoa.c			libft/ft_atoi.c			libft/ft_strdup.c\
 
 SRC		=	src/ft_parse.c			src/ft_beginone.c		src/ft_beginzero.c\
-			src/ft_isrecurrent.c\
+			src/ft_isrecurrent.c	src/ft_filllist.c\
 
 HEADER	=	libft.h					push_swap.h\
 

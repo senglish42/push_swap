@@ -4,13 +4,11 @@ void ft_isrecurrent(char **str1, char **str2);
 void ft_error(int code);
 static size_t ft_strbigger(char **str1, char **str2);
 static void ft_isnumber(char **argv, int arr, int begin);
-void ft_parse(int argc, char **argv, t_stack **row)
+void ft_parse(int argc, char **argv)
 {
 	int count;
-//	int num;
 	char **str;
 
-	(void)row;
 	if (argc <= 1)
 		ft_error(1);
 	argc = 1;
@@ -30,25 +28,6 @@ void ft_parse(int argc, char **argv, t_stack **row)
 			ft_beginone(argv, str, argc++);
 		}
 	}
-//	num = argc;
-//	while (num > 1)
-//	{
-//		while (!ft_strchr(*(argv + argc), 32))
-//			argc--;
-//		str = ft_split(*(argv + argc), 32);
-//		while (num > argc)
-//		{
-//			count = 0;
-//			while (*(str + count))
-//			{
-//				if (!ft_memcmp(*(argv + num), *(str + count++), ft_strbigger
-//						(*(argv + num), *(str + count))))
-//					ft_error(3);
-//			}
-//			num--;
-//		}
-//		while ()
-//	}
 }
 
 static void ft_isnumber(char **argv, int arr, int begin)
@@ -98,7 +77,7 @@ static size_t ft_strbigger(char **str1, char **str2)
 
 	size1 = ft_strlen(*str1);
 	if (ft_strchr(*str2, 32))
-		return ;
+		return (0);
 	size2 = ft_strlen(*str2);
 	if (size1 >= size2)
 		return (size1);
