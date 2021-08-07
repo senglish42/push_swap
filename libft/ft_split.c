@@ -9,13 +9,9 @@ char	**ft_split(char const *s, char c)
 {
 	char	**res;
 	int		slova;
-	int		d;
-	int		elem;
 
 	if (!s)
 		return (NULL);
-	d = 0;
-	elem = 0;
 	slova = ft_count(s, c);
 	res = (char **)malloc(sizeof(char *) * slova + 1);
 	if (!res)

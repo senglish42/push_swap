@@ -1087,33 +1087,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
 
-src/ft_compare.o: src/ft_compare.c.o
-
-.PHONY : src/ft_compare.o
-
-# target to build an object file
-src/ft_compare.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_compare.c.o
-.PHONY : src/ft_compare.c.o
-
-src/ft_compare.i: src/ft_compare.c.i
-
-.PHONY : src/ft_compare.i
-
-# target to preprocess a source file
-src/ft_compare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_compare.c.i
-.PHONY : src/ft_compare.c.i
-
-src/ft_compare.s: src/ft_compare.c.s
-
-.PHONY : src/ft_compare.s
-
-# target to generate assembly for a file
-src/ft_compare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_compare.c.s
-.PHONY : src/ft_compare.c.s
-
 src/ft_filllist.o: src/ft_filllist.c.o
 
 .PHONY : src/ft_filllist.o
@@ -1309,9 +1282,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/ft_compare.o"
-	@echo "... src/ft_compare.i"
-	@echo "... src/ft_compare.s"
 	@echo "... src/ft_filllist.o"
 	@echo "... src/ft_filllist.i"
 	@echo "... src/ft_filllist.s"

@@ -12,25 +12,9 @@ stdlib.h
 unistd.h
 -
 
-/Users/senglish/42/push_swap/main.c
-push_swap.h
-/Users/senglish/42/push_swap/push_swap.h
-
 /Users/senglish/42/push_swap/push_swap.h
 libft/libft.h
 /Users/senglish/42/push_swap/libft/libft.h
-
-/Users/senglish/42/push_swap/src/ft_compare.c
-../push_swap.h
-/Users/senglish/42/push_swap/push_swap.h
-
-/Users/senglish/42/push_swap/src/ft_filllist.c
-../push_swap.h
-/Users/senglish/42/push_swap/push_swap.h
-
-/Users/senglish/42/push_swap/src/ft_param.c
-../push_swap.h
-/Users/senglish/42/push_swap/push_swap.h
 
 /Users/senglish/42/push_swap/src/ft_parse.c
 ../push_swap.h

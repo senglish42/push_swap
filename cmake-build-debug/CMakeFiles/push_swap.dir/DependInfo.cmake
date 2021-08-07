@@ -39,7 +39,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/senglish/42/push_swap/libft/ft_tolower.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "/Users/senglish/42/push_swap/libft/ft_toupper.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
   "/Users/senglish/42/push_swap/main.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
-  "/Users/senglish/42/push_swap/src/ft_compare.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_compare.c.o"
   "/Users/senglish/42/push_swap/src/ft_filllist.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_filllist.c.o"
   "/Users/senglish/42/push_swap/src/ft_param.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_param.c.o"
   "/Users/senglish/42/push_swap/src/ft_parse.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_parse.c.o"

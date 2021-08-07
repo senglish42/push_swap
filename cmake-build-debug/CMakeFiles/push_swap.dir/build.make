@@ -518,22 +518,9 @@ CMakeFiles/push_swap.dir/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/ft_toupper.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/senglish/42/push_swap/libft/ft_toupper.c -o CMakeFiles/push_swap.dir/libft/ft_toupper.c.s
 
-CMakeFiles/push_swap.dir/src/ft_compare.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/src/ft_compare.c.o: ../src/ft_compare.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/push_swap.dir/src/ft_compare.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_compare.c.o -c /Users/senglish/42/push_swap/src/ft_compare.c
-
-CMakeFiles/push_swap.dir/src/ft_compare.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/ft_compare.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/senglish/42/push_swap/src/ft_compare.c > CMakeFiles/push_swap.dir/src/ft_compare.c.i
-
-CMakeFiles/push_swap.dir/src/ft_compare.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/ft_compare.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/senglish/42/push_swap/src/ft_compare.c -o CMakeFiles/push_swap.dir/src/ft_compare.c.s
-
 CMakeFiles/push_swap.dir/src/ft_filllist.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_filllist.c.o: ../src/ft_filllist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/push_swap.dir/src/ft_filllist.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/push_swap.dir/src/ft_filllist.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_filllist.c.o -c /Users/senglish/42/push_swap/src/ft_filllist.c
 
 CMakeFiles/push_swap.dir/src/ft_filllist.c.i: cmake_force
@@ -546,7 +533,7 @@ CMakeFiles/push_swap.dir/src/ft_filllist.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_param.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_param.c.o: ../src/ft_param.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/push_swap.dir/src/ft_param.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/push_swap.dir/src/ft_param.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_param.c.o -c /Users/senglish/42/push_swap/src/ft_param.c
 
 CMakeFiles/push_swap.dir/src/ft_param.c.i: cmake_force
@@ -559,7 +546,7 @@ CMakeFiles/push_swap.dir/src/ft_param.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/src/ft_parse.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_parse.c.o: ../src/ft_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/push_swap.dir/src/ft_parse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/push_swap.dir/src/ft_parse.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_parse.c.o -c /Users/senglish/42/push_swap/src/ft_parse.c
 
 CMakeFiles/push_swap.dir/src/ft_parse.c.i: cmake_force
@@ -572,7 +559,7 @@ CMakeFiles/push_swap.dir/src/ft_parse.c.s: cmake_force
 
 CMakeFiles/push_swap.dir/main.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/push_swap.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/push_swap.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/main.c.o -c /Users/senglish/42/push_swap/main.c
 
 CMakeFiles/push_swap.dir/main.c.i: cmake_force
@@ -619,7 +606,6 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/libft/ft_substr.c.o" \
 "CMakeFiles/push_swap.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/push_swap.dir/libft/ft_toupper.c.o" \
-"CMakeFiles/push_swap.dir/src/ft_compare.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_filllist.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_param.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_parse.c.o" \
@@ -662,14 +648,13 @@ push_swap: CMakeFiles/push_swap.dir/libft/ft_strtrim.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_substr.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_tolower.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_toupper.c.o
-push_swap: CMakeFiles/push_swap.dir/src/ft_compare.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_filllist.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_param.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_parse.c.o
 push_swap: CMakeFiles/push_swap.dir/main.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

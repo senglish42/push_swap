@@ -107,10 +107,6 @@ CMakeFiles/push_swap.dir/main.c.o: ../libft/libft.h
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
 CMakeFiles/push_swap.dir/main.c.o: ../push_swap.h
 
-CMakeFiles/push_swap.dir/src/ft_compare.c.o: ../libft/libft.h
-CMakeFiles/push_swap.dir/src/ft_compare.c.o: ../push_swap.h
-CMakeFiles/push_swap.dir/src/ft_compare.c.o: ../src/ft_compare.c
-
 CMakeFiles/push_swap.dir/src/ft_filllist.c.o: ../libft/libft.h
 CMakeFiles/push_swap.dir/src/ft_filllist.c.o: ../push_swap.h
 CMakeFiles/push_swap.dir/src/ft_filllist.c.o: ../src/ft_filllist.c

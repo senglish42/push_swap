@@ -1,4 +1,4 @@
-#include "../libft/libft.h"
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -6,14 +6,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	unsigned char	*b;
 	unsigned char	*c;
 
-	a = 0;
+	a = -1;
 	b = (unsigned char *)s1;
 	c = (unsigned char *)s2;
-	while (a < n)
+	while (++a < n)
 	{
-		if (b[a] != c[a])
-			return (b[a] - c[a]);
-		a++;
+		if (*(b + a) != *(c + a))
+			return (*(b + a) - *(c + a));
 	}
 	return (0);
-}			
+}

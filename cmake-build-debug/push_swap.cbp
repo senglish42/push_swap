@@ -189,9 +189,6 @@
 		<Unit filename="/Users/senglish/42/push_swap/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/senglish/42/push_swap/src/ft_compare.c">
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_filllist.c">
 			<Option target="push_swap"/>
 		</Unit>

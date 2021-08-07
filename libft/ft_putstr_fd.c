@@ -1,4 +1,4 @@
-#include "../libft/libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
@@ -8,8 +8,5 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	a = 0;
 	while (*(s + a))
-	{
-		write (fd, s + a, 1);
-		a++;
-	}
+		write (fd, s + a++, 1);
 }

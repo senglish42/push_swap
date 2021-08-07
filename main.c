@@ -1,18 +1,34 @@
 #include "push_swap.h"
+#include <stdio.h>
 
+//int main(int argc, char **argv)
+//{
+//	t_stack *a;
+//	t_stack *b;
+//
+//	b = NULL;
+//	ft_parse(argc, argv);
+//	a = ft_filllist(argv);
+//	while (a)
+//	{
+//		printf("%d\n", a->value);
+//		a = a->next;
+//	}
+//	return 0;
+//}
 int main(int argc, char **argv)
 {
 	t_stack *a;
 	t_stack *b;
 
-//	argc = 2;
-//	argv[1] = "435";
-//	argv[2] = "45";
-//	argv[3] = "435";
-//	argv[4] = '\0';
 	b = NULL;
-//	b = NULL;
-	ft_parse(argc, argv);
-	a = ft_filllist(argv);
-	return 0;
+	a = ft_parse(argc, argv);
+//	a = ft_filllist(argv);
+	while (a)
+	{
+		printf("%d\n", a->value);
+		a = a->next;
+	}
+	return (0);
 }
+
