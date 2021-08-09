@@ -1114,32 +1114,32 @@ src/ft_filllist.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_filllist.c.s
 .PHONY : src/ft_filllist.c.s
 
-src/ft_param.o: src/ft_param.c.o
+src/ft_order.o: src/ft_order.c.o
 
-.PHONY : src/ft_param.o
+.PHONY : src/ft_order.o
 
 # target to build an object file
-src/ft_param.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_param.c.o
-.PHONY : src/ft_param.c.o
+src/ft_order.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_order.c.o
+.PHONY : src/ft_order.c.o
 
-src/ft_param.i: src/ft_param.c.i
+src/ft_order.i: src/ft_order.c.i
 
-.PHONY : src/ft_param.i
+.PHONY : src/ft_order.i
 
 # target to preprocess a source file
-src/ft_param.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_param.c.i
-.PHONY : src/ft_param.c.i
+src/ft_order.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_order.c.i
+.PHONY : src/ft_order.c.i
 
-src/ft_param.s: src/ft_param.c.s
+src/ft_order.s: src/ft_order.c.s
 
-.PHONY : src/ft_param.s
+.PHONY : src/ft_order.s
 
 # target to generate assembly for a file
-src/ft_param.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_param.c.s
-.PHONY : src/ft_param.c.s
+src/ft_order.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_order.c.s
+.PHONY : src/ft_order.c.s
 
 src/ft_parse.o: src/ft_parse.c.o
 
@@ -1285,9 +1285,9 @@ help:
 	@echo "... src/ft_filllist.o"
 	@echo "... src/ft_filllist.i"
 	@echo "... src/ft_filllist.s"
-	@echo "... src/ft_param.o"
-	@echo "... src/ft_param.i"
-	@echo "... src/ft_param.s"
+	@echo "... src/ft_order.o"
+	@echo "... src/ft_order.i"
+	@echo "... src/ft_order.s"
 	@echo "... src/ft_parse.o"
 	@echo "... src/ft_parse.i"
 	@echo "... src/ft_parse.s"

@@ -192,7 +192,7 @@
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_filllist.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/senglish/42/push_swap/src/ft_param.c">
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_order.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_parse.c">

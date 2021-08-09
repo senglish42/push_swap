@@ -531,18 +531,18 @@ CMakeFiles/push_swap.dir/src/ft_filllist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/ft_filllist.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/senglish/42/push_swap/src/ft_filllist.c -o CMakeFiles/push_swap.dir/src/ft_filllist.c.s
 
-CMakeFiles/push_swap.dir/src/ft_param.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/src/ft_param.c.o: ../src/ft_param.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/push_swap.dir/src/ft_param.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_param.c.o -c /Users/senglish/42/push_swap/src/ft_param.c
+CMakeFiles/push_swap.dir/src/ft_order.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/src/ft_order.c.o: ../src/ft_order.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/push_swap.dir/src/ft_order.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/ft_order.c.o -c /Users/senglish/42/push_swap/src/ft_order.c
 
-CMakeFiles/push_swap.dir/src/ft_param.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/ft_param.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/senglish/42/push_swap/src/ft_param.c > CMakeFiles/push_swap.dir/src/ft_param.c.i
+CMakeFiles/push_swap.dir/src/ft_order.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/ft_order.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/senglish/42/push_swap/src/ft_order.c > CMakeFiles/push_swap.dir/src/ft_order.c.i
 
-CMakeFiles/push_swap.dir/src/ft_param.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/ft_param.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/senglish/42/push_swap/src/ft_param.c -o CMakeFiles/push_swap.dir/src/ft_param.c.s
+CMakeFiles/push_swap.dir/src/ft_order.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/ft_order.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/senglish/42/push_swap/src/ft_order.c -o CMakeFiles/push_swap.dir/src/ft_order.c.s
 
 CMakeFiles/push_swap.dir/src/ft_parse.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/src/ft_parse.c.o: ../src/ft_parse.c
@@ -607,7 +607,7 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/push_swap.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_filllist.c.o" \
-"CMakeFiles/push_swap.dir/src/ft_param.c.o" \
+"CMakeFiles/push_swap.dir/src/ft_order.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_parse.c.o" \
 "CMakeFiles/push_swap.dir/main.c.o"
 
@@ -649,7 +649,7 @@ push_swap: CMakeFiles/push_swap.dir/libft/ft_substr.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_tolower.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_toupper.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_filllist.c.o
-push_swap: CMakeFiles/push_swap.dir/src/ft_param.c.o
+push_swap: CMakeFiles/push_swap.dir/src/ft_order.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_parse.c.o
 push_swap: CMakeFiles/push_swap.dir/main.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make

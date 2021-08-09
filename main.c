@@ -23,10 +23,9 @@ int main(int argc, char **argv)
 
 	b = NULL;
 	a = ft_parse(argc, argv);
-//	a = ft_filllist(argv);
 	while (a)
 	{
-		printf("%d\n", a->value);
+		printf("%d\n", a->order);
 		a = a->next;
 	}
 	return (0);

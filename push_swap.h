@@ -11,9 +11,9 @@ typedef struct s_struct
 }					t_stack;
 
 t_stack *ft_parse(int argc, char **argv);
-void ft_isrecurrent(char **str1, char **str2, size_t strbigger);
 void	ft_numintolist(t_stack **seq, t_stack *new);
 t_stack *ft_lstlast(t_stack *seq);
-t_stack *ft_isnumber(t_stack **seq, char **argv, int arr);
-t_stack	*ft_lstnew(int content);
+t_stack	*ft_lstnew(int content, int order);
+t_stack *ft_order(t_stack **seq, int order);
+
 #endif
