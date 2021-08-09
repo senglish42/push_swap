@@ -13,11 +13,19 @@ t_stack *ft_order(t_stack **seq, int order)
 	str = (int *)malloc(sizeof(int) * order + 1);
 	*(str + order) = '\0';
 	ft_charorder(str, temp);
+	while (temp)
+	{
+		order = -1;
+		while (*(str + ++order))
+		{
+			if (*(str + order) == temp->value)
+				temp->order = order;
+		}
+		temp = temp->next;
+	}
 	order = -1;
 	while (*(str + ++order))
-	{
 		printf("%d\n", *(str + order));
-	}
 	return (*seq);
 }
 
