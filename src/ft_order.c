@@ -17,10 +17,8 @@ t_stack *ft_order(t_stack **seq, int order)
 	{
 		order = -1;
 		while (*(str + ++order))
-		{
 			if (*(str + order) == temp->value)
 				temp->order = order;
-		}
 		temp = temp->next;
 	}
 	order = -1;

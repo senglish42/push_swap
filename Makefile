@@ -11,6 +11,7 @@ LIBFT	=	libft/ft_memchr.c		libft/ft_strlen.c\
 			libft/ft_itoa.c			libft/ft_atoi.c			libft/ft_strdup.c\
 
 SRC		=	src/ft_parse.c			src/ft_filllist.c		src/ft_order.c\
+			src/ft_sa.c				src/ft_pushelem.c\
 
 HEADER	=	libft.h					push_swap.h\
 
