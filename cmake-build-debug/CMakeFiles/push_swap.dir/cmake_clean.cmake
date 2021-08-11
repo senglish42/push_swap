@@ -38,6 +38,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/src/ft_order.c.o"
   "CMakeFiles/push_swap.dir/src/ft_parse.c.o"
   "CMakeFiles/push_swap.dir/src/ft_pushelem.c.o"
+  "CMakeFiles/push_swap.dir/src/ft_re_rotate.c.o"
   "CMakeFiles/push_swap.dir/src/ft_rotate.c.o"
   "CMakeFiles/push_swap.dir/src/ft_swaptwo.c.o"
   "push_swap"
