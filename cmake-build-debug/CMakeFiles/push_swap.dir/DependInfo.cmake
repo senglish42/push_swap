@@ -1,3 +1,7 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
@@ -39,10 +43,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/senglish/42/push_swap/libft/ft_tolower.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "/Users/senglish/42/push_swap/libft/ft_toupper.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
   "/Users/senglish/42/push_swap/main.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
+  "/Users/senglish/42/push_swap/src/ft_count.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_count.c.o"
+  "/Users/senglish/42/push_swap/src/ft_error.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_error.c.o"
   "/Users/senglish/42/push_swap/src/ft_filllist.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_filllist.c.o"
   "/Users/senglish/42/push_swap/src/ft_order.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_order.c.o"
-  "/Users/senglish/42/push_swap/src/ft_parse.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_parse.c.o"
   "/Users/senglish/42/push_swap/src/ft_pushelem.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_pushelem.c.o"
+  "/Users/senglish/42/push_swap/src/ft_pushswap.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_pushswap.c.o"
   "/Users/senglish/42/push_swap/src/ft_re_rotate.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_re_rotate.c.o"
   "/Users/senglish/42/push_swap/src/ft_rotate.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_rotate.c.o"
   "/Users/senglish/42/push_swap/src/ft_swaptwo.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_swaptwo.c.o"
@@ -51,6 +57,10 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
 # Targets to which this target links.

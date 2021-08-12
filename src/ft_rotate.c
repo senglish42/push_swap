@@ -1,6 +1,6 @@
 #include "../push_swap.h"
 
-t_stack *ft_rotate(t_stack **seq)
+t_stack *ft_rotate(t_stack **seq, char *str)
 {
 	t_stack *temp1;
 	t_stack *temp2;
@@ -13,6 +13,8 @@ t_stack *ft_rotate(t_stack **seq)
 	temp2->next = NULL;
 	*seq = temp1;
 	ft_lstadd_back(seq, temp2);
+	if (str)
+		ft_putstr_fd(str, 1);
 	return (*seq);
 }
 

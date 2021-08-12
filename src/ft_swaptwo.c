@@ -1,9 +1,9 @@
 #include "../push_swap.h"
 #include "stdio.h"
 
-t_stack *ft_swaptwo(t_stack **seq)
+t_stack *ft_swaptwo(t_stack **seq, char *str)
 {
-	printf("\n");
+//	printf("\n");
 	t_stack *temp1;
 	t_stack *temp2;
 	t_stack *temp3;
@@ -30,6 +30,8 @@ t_stack *ft_swaptwo(t_stack **seq)
 	temp3->next = NULL;
 	temp3->next = temp2;
 	*seq = temp3;
+	if (str)
+		ft_putstr_fd(str, 1);
 //	while (temp1)
 //	{
 //		printf("%d\n", temp1->order);

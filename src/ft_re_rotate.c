@@ -3,7 +3,7 @@
 static void ft_lstaddprelast(t_stack **lst);
 static t_stack *ft_lstprelast(t_stack *seq);
 void	ft_lstadd_front(t_stack **lst, t_stack *new);
-t_stack *ft_re_rotate(t_stack **seq)
+t_stack *ft_re_rotate(t_stack **seq, char *str)
 {
 	t_stack *temp1;
 
@@ -14,6 +14,8 @@ t_stack *ft_re_rotate(t_stack **seq)
 		temp1 = temp1->next;
 	ft_lstaddprelast(seq);
 	ft_lstadd_front(seq, temp1);
+	if (str)
+		ft_putstr_fd(str, 1);
 	return (*seq);
 }
 

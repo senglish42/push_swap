@@ -189,16 +189,22 @@
 		<Unit filename="/Users/senglish/42/push_swap/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_count.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_error.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_filllist.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_order.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/senglish/42/push_swap/src/ft_parse.c">
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_pushelem.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/senglish/42/push_swap/src/ft_pushelem.c">
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_pushswap.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_re_rotate.c">

@@ -1,5 +1,4 @@
 #include "../push_swap.h"
-#include "stdio.h"
 
 static int *ft_charorder(int *str, t_stack *temp);
 void ft_order(t_stack **seq, int order)
@@ -21,10 +20,6 @@ void ft_order(t_stack **seq, int order)
 				temp->order = order;
 		temp = temp->next;
 	}
-//	order = -1;
-//	while (*(str + ++order))
-//		printf("%d\n", *(str + order));
-//	return (*seq);
 }
 
 static int *ft_charorder(int *str, t_stack *temp)
