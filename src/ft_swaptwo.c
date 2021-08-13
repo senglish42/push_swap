@@ -3,7 +3,6 @@
 
 t_stack *ft_swaptwo(t_stack **seq, char *str)
 {
-//	printf("\n");
 	t_stack *temp1;
 	t_stack *temp2;
 	t_stack *temp3;

@@ -4,21 +4,7 @@ static void		ft_strbigger(char **str1, char **str2);
 static long int	ft_elemloop(char **argv, int count, int begin);
 static void		ft_strloop(char **str1, char **str2, int count, int begin);
 static int		ft_doublequotes(t_stack **seq, char **argv, int argc, int order);
-//int 			ft_isnumber(t_stack **seq, char **argv, int argc)
-//{
-//	int order;
-//
-//	order = 0;
-//	while (*(argv + ++argc))
-//	{
-//		if (ft_strchr(*(argv + argc), 32))
-//			order = ft_doublequotes(seq, argv, argc, order);
-//		else
-//			ft_numintolist(seq, ft_lstnew((int) ft_elemloop(argv, argc, 1), order++));
-//	}
-//	return (order);
-//}
-t_stack	*ft_isnumber(char **argv, int argc)
+t_stack	*ft_pushswap(char **argv, int argc)
 {
 	t_stack *seq;
 	int order;
@@ -105,7 +91,3 @@ static void ft_strbigger(char **str1, char **str2)
 	if (!ft_memcmp(*str1, *str2, size1))
 		ft_error(4);
 }
-
-
-
-
