@@ -1,6 +1,5 @@
 #include "push_swap.h"
 #include <stdio.h>
-#include <stdio.h>
 
 int main(int argc, char **argv)
 {
@@ -12,9 +11,11 @@ int main(int argc, char **argv)
 	while (a)
 	{
 		printf("%d\n", a->value);
-		printf("%d\n", a->order);
+//		printf("%d\n", a->order);
 		a = a->next;
 	}
+	free(a);
+	a = NULL;
 	return (0);
 }
 

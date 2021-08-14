@@ -20,9 +20,9 @@ void	ft_count(t_stack **seq, int order)
 	else if (order == 3)
 		ft_three(seq);
 	else if (order == 4)
-		ft_four(seq, order);
+		ft_four(seq);
 	else if (order == 5)
-		ft_five(seq, order);
+		ft_five(seq);
 }
 
 void ft_three(t_stack **seq)
@@ -46,7 +46,7 @@ void ft_three(t_stack **seq)
 	}
 }
 
-void ft_four(t_stack **seq, int order)
+void ft_four(t_stack **seq)
 {
 	t_stack *b;
 
@@ -55,56 +55,20 @@ void ft_four(t_stack **seq, int order)
 	ft_three(seq);
 	ft_pushelem(&b, seq, "pa\n");
 	ft_fourtofive(seq);
-//	if ((*seq)->order > (*seq)->next->order && b->order > (*seq)->next->next->order
-//		&& b->order > (*seq)->next->next->next->order)
+//	while ((*seq)->next && ((*seq)->order != 0))
 //		ft_rotate(seq, "ra\n");
-//	else if ((*seq)->order > (*seq)->next->order && b->order > (*seq)->next->next->order
-//		&& b->order < (*seq)->next->next->next->order)
-//	{
-//		ft_re_rotate(seq, "rra\n");
-//		ft_swaptwo(seq, "sa\n");
-//		ft_rotate(seq, "ra\n");
-//		ft_rotate(seq, "ra\n");
-//	}
-//	else if ((*seq)->order > (*seq)->next->order && b->order < (*seq)->next->next->order
-//	&& b->order < (*seq)->next->next->next->order)
-//		ft_swaptwo(seq, "sa\n");
-//	if ((*seq)->order > (*seq)->next->order && (*seq)->order > (*seq)->next->next->order
-//		&& (*seq)->order > (*seq)->next->next->next->order)
-//		ft_rotate(seq, "ra\n");
-//	else if ((*seq)->order > (*seq)->next->order && (*seq)->order > (*seq)->next->next->order
-//		&& (*seq)->order < (*seq)->next->next->next->order)
-//	{
-//		ft_re_rotate(seq, "rra\n");
-//		ft_swaptwo(seq, "sa\n");
-//		ft_rotate(seq, "ra\n");
-//		ft_rotate(seq, "ra\n");
-//	}
-//	else if ((*seq)->order > (*seq)->next->order && (*seq)->order < (*seq)->next->next->order
-//		&& (*seq)->order < (*seq)->next->next->next->order)
-//	ft_swaptwo(seq, "sa\n");
+//	ft_pushelem(seq, &b, "pb\n");
+//	ft_three(seq);
+//	ft_pushelem(&b, seq, "pa\n");
 }
 
-void ft_fourtofive(t_stack **seq)
-{
-	if ((*seq)->order > (*seq)->next->order && (*seq)->order > (*seq)->next->next->order
-	&& (*seq)->order > (*seq)->next->next->next->order)
-		ft_rotate(seq, "ra\n");
-	else if ((*seq)->order > (*seq)->next->order && (*seq)->order > (*seq)->next->next->order
-	&& (*seq)->order < (*seq)->next->next->next->order)
-		ft_prelast(seq);
-	else if ((*seq)->order > (*seq)->next->order && (*seq)->order < (*seq)->next->next->order
-	&& (*seq)->order < (*seq)->next->next->next->order)
-		ft_swaptwo(seq, "sa\n");
-}
-
-void ft_five(t_stack **seq, int order)
+void ft_five(t_stack **seq)
 {
 	t_stack *b;
 
 	b = NULL;
 	ft_pushelem(seq, &b, "pb\n");
-	ft_four(seq, order);
+	ft_four(seq);
 	ft_pushelem(&b, seq, "pa\n");
 	if ((*seq)->order < (*seq)->next->order)
 		return ;
@@ -120,6 +84,19 @@ void ft_five(t_stack **seq, int order)
 		ft_rotate(seq, "ra\n");
 	}
 	else if ((*seq)->order > (*seq)->next->order)
+		ft_swaptwo(seq, "sa\n");
+}
+
+void ft_fourtofive(t_stack **seq)
+{
+	if ((*seq)->order > (*seq)->next->order && (*seq)->order > (*seq)->next->next->order
+		&& (*seq)->order > (*seq)->next->next->next->order)
+		ft_rotate(seq, "ra\n");
+	else if ((*seq)->order > (*seq)->next->order && (*seq)->order > (*seq)->next->next->order
+			 && (*seq)->order < (*seq)->next->next->next->order)
+		ft_prelast(seq);
+	else if ((*seq)->order > (*seq)->next->order && (*seq)->order < (*seq)->next->next->order
+			 && (*seq)->order < (*seq)->next->next->next->order)
 		ft_swaptwo(seq, "sa\n");
 }
 
