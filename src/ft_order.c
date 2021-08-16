@@ -1,14 +1,15 @@
 #include "../push_swap.h"
 
 static int *ft_charorder(int *str, t_stack *temp);
-void ft_order(t_stack **seq, int order){
+void ft_order(t_stack **seq, int order)
+{
 	t_stack *temp;
 	int *str;
 
 	if (!*seq)
 		return;
 	temp = *seq;
-	str = (int *) malloc(sizeof(int) * order);
+	str = (int *) malloc(sizeof(int) * order + 1);
 	*(str + order) = '\0';
 	ft_charorder(str, temp);
 	while (order-- > 0) {

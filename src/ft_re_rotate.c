@@ -21,6 +21,13 @@ void ft_re_rotate(t_stack **seq, char *str)
 	if (str)
 		ft_putstr_fd(str, 1);
 }
+
+//if ((*seq)->order > (*seq)[1].order && (*seq)->order > (*seq)[2].order && (*seq)->order > (*seq)[3].order)
+//ft_rotate(seq, "ra\n");
+//else if ((*seq)->order > (*seq)[1].order && (*seq)->order > (*seq)[2].order && (*seq)->order < (*seq)[3].order)
+//ft_prelast(seq);
+//else if ((*seq)->order > (*seq)[1].order && (*seq)->order < (*seq)[2].order && (*seq)->order < (*seq)[3].order)
+//ft_swaptwo(seq, "sa\n");
 //	t_stack *temp1;
 //
 //	if (!seq)

@@ -3,19 +3,15 @@
 
 int main(int argc, char **argv)
 {
-	t_stack *a;
-
-	if (argc <= 1)
+	if (argc <= 1 || **argv == '/')
 		ft_error(1);
-	a = ft_pushswap(argv, 0);
-	while (a)
-	{
-		printf("%d\n", a->value);
+	ft_pushswap(argv, 0);
+//	while (a)
+//	{
+//		printf("%d\n", a->value);
 //		printf("%d\n", a->order);
-		a = a->next;
-	}
-	free(a);
-	a = NULL;
+//		a = a->next;
+//	}
 	return (0);
 }
 
