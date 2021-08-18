@@ -32,5 +32,8 @@ t_stack	*ft_pushswap(char **argv, int argc);
 void	ft_fourtofive(t_stack **seq);
 void	ft_prelast(t_stack **seq);
 void 	ft_five(t_stack **seq, int order);
+void	ft_sort(t_stack **seq, int order);
+int		ft_well_ordered(t_stack **seq, int middle);
+//void	ft_swapb(t_stack **b);
 
 #endif
