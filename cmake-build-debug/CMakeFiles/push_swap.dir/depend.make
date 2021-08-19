@@ -123,6 +123,10 @@ CMakeFiles/push_swap.dir/src/ft_order.c.o: \
  ../libft/libft.h \
  ../push_swap.h \
  ../src/ft_order.c
+CMakeFiles/push_swap.dir/src/ft_param.c.o: \
+ ../libft/libft.h \
+ ../push_swap.h \
+ ../src/ft_param.c
 CMakeFiles/push_swap.dir/src/ft_pushelem.c.o: \
  ../libft/libft.h \
  ../push_swap.h \

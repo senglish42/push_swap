@@ -6,10 +6,14 @@ typedef struct s_struct
 {
 	int 			value;
 	int 			order;
-	int 			flag;
+	int				top;
+	int 			b_rotate;
+	int 			b_reverse;
+	int 			a_reverse;
 	struct s_struct	*next;
 }					t_stack;
 
+t_stack *settings(t_stack **b);
 void	ft_numintolist(t_stack **seq, t_stack *new);
 t_stack *ft_lstlast(t_stack *seq);
 t_stack	*ft_lstnew(int content, int order);
@@ -32,8 +36,9 @@ t_stack	*ft_pushswap(char **argv, int argc);
 void	ft_fourtofive(t_stack **seq);
 void	ft_prelast(t_stack **seq);
 void 	ft_five(t_stack **seq, int order);
-void	ft_sort(t_stack **seq, int order);
-int		ft_well_ordered(t_stack **seq, int middle);
+void	ft_push_to_a(t_stack **seq, t_stack **b);
+void	ft_push_to_b(t_stack **seq, t_stack *b, int order);
+//int		ft_well_ordered(t_stack **seq, int middle);
 //void	ft_swapb(t_stack **b);
 
 #endif

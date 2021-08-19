@@ -47,6 +47,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/senglish/42/push_swap/src/ft_error.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_error.c.o"
   "/Users/senglish/42/push_swap/src/ft_filllist.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_filllist.c.o"
   "/Users/senglish/42/push_swap/src/ft_order.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_order.c.o"
+  "/Users/senglish/42/push_swap/src/ft_param.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_param.c.o"
   "/Users/senglish/42/push_swap/src/ft_pushelem.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_pushelem.c.o"
   "/Users/senglish/42/push_swap/src/ft_pushswap.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_pushswap.c.o"
   "/Users/senglish/42/push_swap/src/ft_re_rotate.c" "/Users/senglish/42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_re_rotate.c.o"

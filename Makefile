@@ -1,7 +1,7 @@
-CFILE =     src/ft_pushswap.c src/ft_filllist.c src/ft_order.c\
-			src/ft_pushelem.c src/ft_rotate.c\
-			src/ft_re_rotate.c src/ft_count.c src/ft_error.c\
-			src/ft_swaptwo.c main.c
+CFILE =     src/ft_pushswap.c	src/ft_filllist.c	src/ft_order.c\
+			src/ft_pushelem.c	src/ft_rotate.c		src/ft_param.c\
+			src/ft_re_rotate.c	src/ft_count.c		src/ft_error.c\
+			src/ft_swaptwo.c 	main.c
 OFILE = $(CFILE:.c=.o)
 CFLAGS = -Wall -Wextra -Werror -I libft.h
 CC = clang

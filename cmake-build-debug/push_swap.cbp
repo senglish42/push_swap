@@ -192,6 +192,9 @@
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_count.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_countc">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_error.c">
 			<Option target="push_swap"/>
 		</Unit>
@@ -199,6 +202,9 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_order.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/42/push_swap/src/ft_param.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/42/push_swap/src/ft_pushelem.c">

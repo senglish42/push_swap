@@ -11,6 +11,7 @@ t_stack	*ft_pushswap(char **argv, int argc)
 
 	seq = NULL;
 	order = 0;
+
 	while (*(argv + ++argc))
 	{
 		if (ft_strchr(*(argv + argc), 32))

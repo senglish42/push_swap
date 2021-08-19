@@ -1065,6 +1065,30 @@ src/ft_order.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_order.c.s
 .PHONY : src/ft_order.c.s
 
+src/ft_param.o: src/ft_param.c.o
+.PHONY : src/ft_param.o
+
+# target to build an object file
+src/ft_param.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_param.c.o
+.PHONY : src/ft_param.c.o
+
+src/ft_param.i: src/ft_param.c.i
+.PHONY : src/ft_param.i
+
+# target to preprocess a source file
+src/ft_param.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_param.c.i
+.PHONY : src/ft_param.c.i
+
+src/ft_param.s: src/ft_param.c.s
+.PHONY : src/ft_param.s
+
+# target to generate assembly for a file
+src/ft_param.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_param.c.s
+.PHONY : src/ft_param.c.s
+
 src/ft_pushelem.o: src/ft_pushelem.c.o
 .PHONY : src/ft_pushelem.o
 
@@ -1311,6 +1335,9 @@ help:
 	@echo "... src/ft_order.o"
 	@echo "... src/ft_order.i"
 	@echo "... src/ft_order.s"
+	@echo "... src/ft_param.o"
+	@echo "... src/ft_param.i"
+	@echo "... src/ft_param.s"
 	@echo "... src/ft_pushelem.o"
 	@echo "... src/ft_pushelem.i"
 	@echo "... src/ft_pushelem.s"
