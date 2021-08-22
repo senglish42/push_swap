@@ -11,7 +11,7 @@ t_stack	*settings(t_stack **b)
 	set->b_rotate = 0;
 	set->reverse = 0;
 	set->a_reverse = 0;
-	set->a_top = 0;
+	set->a_rotate = 0;
 	set->b_reverse = 0;
 	*b = set;
 	return (*b);

@@ -142,3 +142,21 @@ static int a_smaller_b(t_stack **seq, t_stack **b, int push, int min)
 		ft_re_rotate(seq, 0);
 	return (min);
 }
+
+
+if ((*seq)->loop == 'x')
+{
+	while ((*seq)->next && (*b)->order <= (*seq)->order + 1 && (++count < min || min == 0))
+		//			{
+		ft_re_rotate(seq, 0);
+	//				if ((*b)->order > (*seq)->order)
+	//				{
+	//					ft_rotate(seq, 0);
+	//					--count;
+	//					break ;
+	//				}
+	//			}
+	ft_rotate(seq, 0);
+	--count;
+	break ;
+}

@@ -153,7 +153,7 @@ static void b_rotate(t_stack **seq, t_stack **b, int count)
 	else if ((*b) && (*b)->a_reverse == 0 && (*b)->reverse == 0)
 	{
 		num = 0;
-		while (num != (*b)->a_top && num != (*b)->b_rotate)
+		while (num != (*b)->a_rotate && num != (*b)->b_rotate)
 		{
 			ft_rotate(b, 0);
 			ft_rotate(seq, 0);
@@ -161,7 +161,7 @@ static void b_rotate(t_stack **seq, t_stack **b, int count)
 			num += 1;
 		}
 //		while (num < temp_b->a_top && num >= temp_b->top)
-	while (num < (*b)->a_top)
+while (num < (*b)->a_rotate)
 		{
 			ft_rotate(seq, "ra\n");
 			num++;
@@ -176,19 +176,19 @@ static void b_rotate(t_stack **seq, t_stack **b, int count)
 	else if (*b && (*b)->a_reverse == 1 && (*b)->reverse == 1)
 	{
 		num = 0;
-		while (num != (*b)->a_top && num != (*b)->top)
+		while (num != (*b)->a_rotate && num != (*b)->top)
 		{
 			ft_re_rotate(b, 0);
 			ft_re_rotate(seq, 0);
 			ft_putstr_fd("rrr\n", 1);
 			num++;
 		}
-		while (num < (*b)->a_top && num >= (*b)->top)
+		while (num < (*b)->a_rotate && num >= (*b)->top)
 		{
 			ft_re_rotate(seq, "rra\n");
 			num++;
 		}
-		while (num >= (*b)->a_top && num < (*b)->top)
+		while (num >= (*b)->a_rotate && num < (*b)->top)
 		{
 			ft_re_rotate(b, "rrb\n");
 			num++;
@@ -197,7 +197,7 @@ static void b_rotate(t_stack **seq, t_stack **b, int count)
 	else if ((*b) && (*b)->a_reverse == 1 && (*b)->reverse == 0)
 	{
 		num = 0;
-		while ((*b)->a_top > num)
+		while ((*b)->a_rotate > num)
 		{
 			ft_re_rotate(seq, "rra\n");
 			num++;
@@ -211,7 +211,7 @@ static void b_rotate(t_stack **seq, t_stack **b, int count)
 	else if (*b && (*b)->a_reverse == 0 && (*b)->reverse == 1)
 	{
 		num = 0;
-		while ((*b)->a_top > num)
+		while ((*b)->a_rotate > num)
 		{
 			ft_rotate(seq, "ra\n");
 			num++;
@@ -268,7 +268,6 @@ static void sort_b(t_stack **seq, t_stack **b, int size_b)
 //				min = b_smaller_a(seq, b, push, min);
 //			else if ((*b)->order > (*seq)->order)
 //				min = a_smaller_b(seq, b, push, min);
-
 		}
 		ft_rotate(b, 0);
 		back_b++;
@@ -397,15 +396,17 @@ static int reverse_upper(t_stack **seq, t_stack **b, int push, int min)
 		if ((*seq)->loop == 'x')
 		{
 			while ((*seq)->next && (*b)->order <= (*seq)->order + 1 && (++count < min || min == 0))
-			{
+//			{
 				ft_re_rotate(seq, 0);
-				if ((*b)->order > (*seq)->order)
-				{
-					ft_rotate(seq, 0);
-					--count;
-					break ;
-				}
-			}
+//				if ((*b)->order > (*seq)->order)
+//				{
+//					ft_rotate(seq, 0);
+//					--count;
+//					break ;
+//				}
+//			}
+			ft_rotate(seq, 0);
+			--count;
 			break ;
 		}
 	}
@@ -461,6 +462,9 @@ static int straight_below(t_stack **seq, t_stack **b, int push, int min)
 			ft_rotate(seq, 0);
 			while ((*seq)->next && (*b)->order >= (*seq)->order + 1 && (++count < min || min == 0))
 				ft_rotate(seq, 0);
+			ft_re_rotate(seq, 0);
+			--count;
+			break ;
 		}
 	}
 	if (count > 0 && (min == 0 || count < min))
@@ -571,7 +575,8 @@ static int rev_or_str(t_stack **seq, t_stack **b, int min)
 	int 	top;
 	int 	reverse;
 
-	(*b)->b_rotate = min;
+//	(*b)->b_rotate = (*b)->top;
+	top = (*b)->top;
 	num = (*b)->value;
 	reverse = (*b)->reverse;
 //	if ((*b)->top == (*seq)->top && (*b)->next == NULL)
@@ -581,8 +586,8 @@ static int rev_or_str(t_stack **seq, t_stack **b, int min)
 //	}
 	while ((*b)->next)
 	{
-		(*b)->b_rotate = min;
-		(*b)->a_top = (*seq)->top;
+		(*b)->b_rotate = top;
+		(*b)->a_rotate = (*seq)->top;
 		(*b)->a_reverse = (*seq)->reverse;
 		(*b)->b_reverse = reverse;
 		ft_rotate(b, 0);

@@ -7,10 +7,10 @@ typedef struct s_struct
 	int 			value;
 	int 			order;
 	int				top;
-	int 			b_rotate;
 	int 			reverse;
+	int 			b_rotate;
 	int 			a_reverse;
-	int 			a_top;
+	int 			a_rotate;
 	int				b_reverse;
 	char 			loop;
 	struct s_struct	*next;
