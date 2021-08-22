@@ -8,8 +8,11 @@ typedef struct s_struct
 	int 			order;
 	int				top;
 	int 			b_rotate;
-	int 			b_reverse;
+	int 			reverse;
 	int 			a_reverse;
+	int 			a_top;
+	int				b_reverse;
+	char 			loop;
 	struct s_struct	*next;
 }					t_stack;
 
