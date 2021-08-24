@@ -1,10 +1,11 @@
 #include "../push_swap.h"
+#include <stdio.h>
 
 static void		ft_strbigger(char **str1, char **str2);
 static long int	ft_elemloop(char **argv, int count, int begin);
 static void		ft_strloop(char **str1, char **str2, int count, int begin);
 static int		ft_doublequotes(t_stack **seq, char **argv, int argc, int order);
-t_stack	*ft_pushswap(char **argv, int argc)
+t_stack			*ft_pushswap(char **argv, int argc)
 {
 	t_stack *seq;
 	int order;
@@ -21,6 +22,22 @@ t_stack	*ft_pushswap(char **argv, int argc)
 	}
 	ft_order(&seq, order);
 	ft_count(&seq, order);
+//	order = 0;
+//	while (seq)
+//	{
+//		if (seq->value == ++order)
+//		{
+//			if (seq->value == 500)
+//				printf("%s\n", "yes");
+//			seq = seq->next;
+//		}
+//		else
+//		{
+//			printf("%s\n", "no");
+//			printf("%d\n", seq->order);
+//			break;
+//		}
+//	}
 	return (seq);
 }
 

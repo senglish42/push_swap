@@ -8,216 +8,218 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/sedgekins/42/cmake-build-debug"/>
+				<Option working_dir="/Users/senglish/42/push_swap1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/sedgekins/42/cmake-build-debug"/>
+				<Option working_dir="/Users/senglish/42/push_swap1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/sedgekins/42/cmake-build-debug"/>
+				<Option working_dir="/Users/senglish/42/push_swap1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="push_swap">
-				<Option output="/home/sedgekins/42/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sedgekins/42/cmake-build-debug"/>
+				<Option output="/Users/senglish/42/push_swap1/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/senglish/42/push_swap1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="push_swap/fast">
-				<Option output="/home/sedgekins/42/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sedgekins/42/cmake-build-debug"/>
+				<Option output="/Users/senglish/42/push_swap1/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/senglish/42/push_swap1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sedgekins/42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/senglish/42/push_swap1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sedgekins/42/libft">
+		<Unit filename="/Users/senglish/42/push_swap1/libft">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_atoi.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_atoi.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_bzero.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_bzero.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_calloc.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_calloc.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_isalnum.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_isalnum.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_isalpha.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_isalpha.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_isascii.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_isascii.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_isdigit.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_isdigit.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_isprint.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_isprint.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_itoa.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_itoa.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_memccpy.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_memccpy.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_memchr.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_memchr.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_memcmp.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_memcmp.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_memcpy.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_memcpy.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_memmove.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_memmove.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_memset.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_memset.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_putchar_fd.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_putendl_fd.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_putnbr_fd.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_putstr_fd.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_split.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_split.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strchr.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strchr.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strdup.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strdup.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strjoin.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strjoin.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strlcat.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strlcat.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strlcpy.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strlcpy.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strlen.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strlen.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strmapi.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strmapi.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strncmp.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strncmp.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strnstr.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strnstr.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strrchr.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strrchr.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_strtrim.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_strtrim.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_substr.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_substr.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_tolower.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_tolower.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/libft/ft_toupper.c">
+		<Unit filename="/Users/senglish/42/push_swap1/libft/ft_toupper.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/main.c">
+		<Unit filename="/Users/senglish/42/push_swap1/main.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/push_swap.h">
+		<Unit filename="/Users/senglish/42/push_swap1/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_count.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_count.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_error.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_error.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_filllist.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_filllist.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_order.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_order.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_param.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_param.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_pushelem.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_pushelem.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_pushswap.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_pushswap.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_re_rotate.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_re_rotate.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_rotate.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_rotate.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/src/ft_swaptwo.c">
+		<Unit filename="/Users/senglish/42/push_swap1/src/ft_swaptwo.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/home/sedgekins/42/CMakeLists.txt">
+		<Unit filename="/Users/senglish/42/push_swap1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
