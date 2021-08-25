@@ -35,7 +35,7 @@ void	ft_count(t_stack **seq, int order);
 void	ft_three(t_stack **seq);
 void 	ft_four(t_stack **seq, int order);
 void	ft_error(int code);
-t_stack	*ft_pushswap(char **argv, int argc);
+void	ft_pushswap(t_stack **a, char **argv, int argc);
 void	ft_fourtofive(t_stack **seq);
 void	ft_prelast(t_stack **seq);
 void 	ft_five(t_stack **seq, int order);
