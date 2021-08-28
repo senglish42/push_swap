@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/senglish/42/push_swap1/libft/libft.h
+/Users/senglish/Desktop/push_swap/libft/libft.h
 stdlib.h
 -
 unistd.h
 -
 
-/Users/senglish/42/push_swap1/push_swap.h
-./libft/libft.h
-/Users/senglish/42/push_swap1/libft/libft.h
+/Users/senglish/Desktop/push_swap/main.c
+push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
+stdio.h
+-
 
-/Users/senglish/42/push_swap1/src/ft_count.c
+/Users/senglish/Desktop/push_swap/push_swap.h
+./libft/libft.h
+/Users/senglish/Desktop/push_swap/libft/libft.h
+
+/Users/senglish/Desktop/push_swap/src/ft_count.c
 ../push_swap.h
-/Users/senglish/42/push_swap1/push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
 

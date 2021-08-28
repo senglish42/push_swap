@@ -16,7 +16,6 @@ void ft_order(t_stack **seq, int order)
 		temp = *seq;
 		while (order >= 0 && (*(str + order) != temp->value))
 			temp = temp->next;
-		//	if (*(str + order) == temp->value)
 		temp->order = order;
 	}
 	free(str);

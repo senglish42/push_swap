@@ -1,5 +1,7 @@
 #include "../push_swap.h"
 
+static int	first_loop(t_stack **seq, t_stack **b, int order);
+static void	second_loop(t_stack **seq, t_stack **b, int order, int cnt);
 static int	rev_or_str(t_stack **seq, t_stack **b, int min);
 static int	count_elem(t_stack **seq);
 static void	sort_b(t_stack **seq, t_stack **b, int size_b);
@@ -35,128 +37,75 @@ void		ft_count(t_stack **seq, int order)
 		ft_push_to_b(seq, b, --order);
 }
 
-void ft_push_to_b(t_stack **seq, t_stack *b, int order)
+static void second_loop(t_stack **seq, t_stack **b, int order, int cnt)
 {
-	t_stack *temp;
-	int position;
-	int current;
-	int a_num;
-	int min;
-	int max;
-	int value;
+	int count;
 
-	a_num = 1;
-	temp = *seq;
-	*seq = temp->next;
-	while (temp->next && temp->order > order / 4)
+	count = -1;
+	while ((*seq)->next && count++ != order - cnt)
 	{
-		if (temp->order == order)
+		if ((*seq)->loop == 'x')
 		{
-			temp->loop = 'x';
-			ft_rotate(&temp, "ra\n");
-			a_num++;
-			max = a_num;
+			if ((*seq)->order != order)
+				(*seq)->loop = 'o';
+			ft_rotate(seq, "ra\n");
 		}
-		ft_pushelem(&temp, &b, "pb\n");
-		b = settings(&b);
-		if (b->next && b->order > order / 2)
-			ft_rotate(&b, "pb\n");
+		else if ((*seq)->order <= order * 0.25 || (*seq)->order >= order * 0.75)
+		{
+			ft_pushelem(seq, b, "pb\n");
+			*b = settings(b);
+			if ((*b)->next && (*b)->order >= order * 0.75)
+				ft_rotate(b, "pb\n");
+		}
 	}
-	temp = settings(&temp);
-	current = temp->order;
-	value = temp->value;
-	position = (int)(current * (order + 1) / 20);
-	ft_rotate(&temp, "ra\n");
-	while (temp->next && temp->value != value)
+}
+
+int first_loop(t_stack **seq, t_stack **b, int order)
+{
+	int count;
+	int cnt;
+
+	count = -1;
+	cnt = 0;
+	while ((*seq)->next && count++ != order)
 	{
-		if (temp->order == 0 || temp->order == order)
+		if ((*seq)->order >= order * 0.25 && (*seq)->order <= order * 0.75)
 		{
-			a_num++;
-			if (temp->order == order)
-			{
-				max = a_num;
-				temp->loop = 'x';
-			}
-			if (temp->order == 0)
-				min = a_num;
-			ft_rotate(&temp, "ra\n");
-		}
-		else if (temp->order > current && temp->order <= position)
-		{
-			temp = settings(&temp);
-			current = temp->order;
-			position = (int)(current * (order + 1) / 20);
-			ft_rotate(&temp, "ra\n");
-			a_num++;
+			ft_pushelem(seq, b, "pb\n");
+			*b = settings(b);
+			if ((*b)->next && (*b)->order >= order * 0.5)
+				ft_rotate(b, "rb\n");
+			cnt++;
 		}
 		else
 		{
-			ft_pushelem(&temp, &b, "pb\n");
-			b = settings(&b);
-			if (b->next && b->order > order / 2)
-				ft_rotate(&b, "pb\n");
-//			if (b->next && b->order > b->next->order * 1.25)
-//				ft_swaptwo(&b, "sb\n");
+			if ((*seq)->order == order || (*seq)->order == order - 1 || (*seq)->order == order - 2)
+				(*seq)->loop = 'x';
+			ft_rotate(seq, "ra\n");
 		}
 	}
-	if (min < a_num / 2)
-	{
-		while (temp->next && temp->order != 0)
-			ft_rotate(&temp, "ra\n");
-		while (temp->next && temp->next->value != value)
-		{
-			ft_re_rotate(&temp, "ra\n");
-			ft_swaptwo(&temp, "sa\n");
-			if (temp->next->value == value)
-				break;
-		}
-	}
-	if (min > a_num / 2)
-	{
-		while (temp->next && temp->order != 0)
-			ft_re_rotate(&temp, "rra\n");
-		while (temp->next && temp->next->value != value)
-		{
-			ft_swaptwo(&temp, "sa\n");
-			ft_rotate(&temp, "ra\n");
-		}
-	}
-	if (max + 1 < a_num / 2)
-	{
-		while (temp->next && temp->order != order)
-			ft_rotate(&temp, "ra\n");
-		while (temp->next && temp->next->order != 0)
-		{
-			ft_re_rotate(&temp, "ra\n");
-			ft_swaptwo(&temp, "sa\n");
-			if (temp->next->order == 0)
-				break;
-		}
-	}
-	if (max + 1 > a_num / 2)
-	{
-		while (temp->next && temp->order != order)
-			ft_re_rotate(&temp, "rra\n");
-		while (temp->next && temp->next->order != 0)
-		{
-			ft_swaptwo(&temp, "sa\n");
-			ft_rotate(&temp, "ra\n");
-		}
-	}
-	ft_rotate(&temp, "ra\n");
+	return (cnt);
+}
+
+void ft_push_to_b(t_stack **seq, t_stack *b, int order)
+{
+	int	count;
+
+	second_loop(seq, &b, order, first_loop(seq, &b, order));
+	ft_three(seq);
+	count = ++order;
 	while (b)
 	{
-		top_to_bottom(&temp);
+		top_to_bottom(seq);
 		top_to_bottom(&b);
-		b_rotate(&temp, &b, order-- + 1 - a_num);
+		b_rotate(seq, &b, count-- - 3);
 	}
-	if (temp->order < order / 2)
-		while (temp->order != 0)
-			ft_re_rotate(&temp, "rra\n");
+	if ((*seq)->order < order / 2)
+		while ((*seq)->order != 0)
+			ft_re_rotate(seq, "rra\n");
 	else
-		while (temp->order != 0)
-			ft_rotate(&temp, "ra\n");
-	*seq = temp;
+		while ((*seq)->order != 0)
+			ft_rotate(seq, "ra\n");
 }
 
 static int count_elem(t_stack **seq)
@@ -175,6 +124,36 @@ static int count_elem(t_stack **seq)
 	}
 	return (elem);
 }
+
+//static void top_to_bottom(t_stack **seq)
+//{
+//	t_stack	*temp;
+//	int		count;
+//	int		num;
+//	int		order;
+//
+//	count = 0;
+//	order = count_elem(seq);
+//	temp = *seq;
+//	*seq = temp->next;
+//	num = temp->value;
+//	while (temp->next)
+//	{
+//		if (count == 1 && order == 2)
+//			temp->reverse = 1;
+//		if (count <= order / 2)
+//			temp->top = count++;
+//		else if (count > order / 2)
+//		{
+//			temp->top = order - count++;
+//			temp->reverse = 1;
+//		}
+//		ft_rotate(&temp, 0);
+//		if (temp->value == num)
+//			break;
+//	}
+//	*seq = temp;
+//}
 
 static void top_to_bottom(t_stack **seq)
 {
@@ -353,12 +332,6 @@ static int reverse_upper(t_stack **seq, t_stack **b, int push, int min)
 	push < min || min == 0))
 	{
 		ft_re_rotate(seq, 0);
-//		if ((*seq)->value == value)
-//		{
-//			ft_rotate(seq, "rra\n");
-//			count++;
-//			break;
-//		}
 		if ((*seq)->loop == 'x' )
 		{
 			while ((*seq)->next && (*b)->order <= (*seq)->order + 1 &&
@@ -396,8 +369,6 @@ static int reverse_below(t_stack **seq, t_stack **b, int push, int min)
 	push < min || min == 0))
 	{
 		ft_re_rotate(seq, 0);
-//		if ((*seq)->value == value)
-//			break;
 		if ((*b)->order > (*seq)->order)
 		{
 			ft_rotate(seq, 0);
@@ -425,8 +396,6 @@ static int straight_below(t_stack **seq, t_stack **b, int push, int min)
 	count++ + push < min))
 	{
 		ft_rotate(seq, 0);
-//		if ((*seq)->value == value)
-//			break;
 		if ((*seq)->loop == 'x')
 		{
 			ft_rotate(seq, 0);
@@ -464,15 +433,7 @@ static int straight_upper(t_stack **seq, t_stack **b, int push, int min)
 	value = (*seq)->value;
 	while ((*seq)->next && (*b)->order >= (*seq)->order + 1 && (count++ +
 	push < min || min == 0))
-	{
 		ft_rotate(seq, 0);
-//		if ((*seq)->value == value)
-//		{
-//			ft_rotate(seq, "rra\n");
-//			count++;
-//			break;
-//		}
-	}
 	if (count > 0 && (min == 0 || count + push < min))
 	{
 		min = count + push;
@@ -485,12 +446,8 @@ static int straight_upper(t_stack **seq, t_stack **b, int push, int min)
 
 static void refresh(t_stack **seq, int value)
 {
-	t_stack *temp_a;
-
-	temp_a = *seq;
-	while (temp_a->next && temp_a->value != value)
-		ft_re_rotate(&temp_a, 0);
-	*seq = temp_a;
+	while ((*seq)->next && (*seq)->value != value)
+		ft_re_rotate(seq, 0);
 }
 
 static int rev_or_str(t_stack **seq, t_stack **b, int min)
