@@ -1,4 +1,5 @@
 #include "../push_swap.h"
+#include "stdio.h"
 
 static int rev_or_str(t_stack **seq, t_stack **b, int min);
 static int check_min(t_stack **seq, t_stack **b, int count, int min, int order, int size_b, int value);
@@ -75,7 +76,7 @@ int first_loop(t_stack **seq, t_stack **b, int order)
 	cnt = 0;
 	while ((*seq)->next && count++ != order)
 	{
-		if ((*seq)->order > (order + 1) * 0.25 && (*seq)->order <= (order + 1) * 0.75)
+		if ((*seq)->order > (order + 1) * 0.25 && (*seq)->order <= (order + 1) * 0.75 && (*seq)->order < order - 2)
 		{
 			ft_pushelem(seq, b, "pb\n");
 			*b = settings(b);
@@ -258,7 +259,17 @@ static void sort_b(t_stack **seq, t_stack **b, int size_b, int order)
 {
 	int back_b;
 	int last;
+	int value;
+	int count;
 
+	count = 0;
+	value = (*seq)->value;
+	while (count == 0 || (*seq)->value != value)
+	{
+		printf("%d\n", (*seq)->value);
+		ft_rotate(seq, 0);
+		count++;
+	}
 	ft_re_rotate(seq, 0);
 	last = (*seq)->order;
 	ft_rotate(seq, 0);
@@ -274,6 +285,14 @@ static void sort_b(t_stack **seq, t_stack **b, int size_b, int order)
 	else if (back_b > 0 && back_b != size_b && back_b >= size_b / 2)
 		while (size_b != back_b++)
 			ft_rotate(b, 0);
+	count = 0;
+	value = (*seq)->value;
+	while (count == 0 || (*seq)->value != value)
+	{
+		printf("%d\n", (*seq)->value);
+		ft_rotate(seq, 0);
+		count++;
+	}
 }
 
 static int b_turns(t_stack **seq, t_stack **b, int size_b, int order)

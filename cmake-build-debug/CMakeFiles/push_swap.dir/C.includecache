@@ -19,4 +19,6 @@ unistd.h
 /Users/senglish/Desktop/push_swap/src/ft_count.c
 ../push_swap.h
 /Users/senglish/Desktop/push_swap/push_swap.h
+stdio.h
+/Users/senglish/Desktop/push_swap/src/stdio.h
 
