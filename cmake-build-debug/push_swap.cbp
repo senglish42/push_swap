@@ -78,6 +78,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/checker.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/get_next_line.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/get_next_line.h">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/libft">
 			<Option target="push_swap"/>
 		</Unit>
@@ -181,9 +190,6 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/libft/ft_toupper.c">
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/senglish/Desktop/push_swap/main.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/push_swap.h">

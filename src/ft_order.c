@@ -12,7 +12,8 @@ void ft_order(t_stack **seq, int order)
 	str = (int *) malloc(sizeof(int) * order + 1);
 	*(str + order) = '\0';
 	ft_charorder(str, temp);
-	while (order-- > 0) {
+	while (order-- > 0)
+	{
 		temp = *seq;
 		while (order >= 0 && (*(str + order) != temp->value))
 			temp = temp->next;

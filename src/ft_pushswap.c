@@ -4,7 +4,7 @@ static void		ft_strbigger(char **str1, char **str2);
 static long int	ft_elemloop(char **argv, int count, int begin);
 static void		ft_strloop(char **str1, char **str2, int count, int begin);
 static int		ft_doublequotes(t_stack **seq, char **argv, int argc, int order);
-void 			ft_pushswap(t_stack **a, char **argv, int argc)
+int 			ft_pushswap(t_stack **a, char **argv, int argc)
 {
 	int order;
 
@@ -17,7 +17,7 @@ void 			ft_pushswap(t_stack **a, char **argv, int argc)
 			ft_numintolist(a, ft_lstnew((int) ft_elemloop(argv, argc, 1), order++));
 	}
 	ft_order(a, order);
-	ft_count(a, order);
+	return (order);
 }
 
 static int ft_doublequotes(t_stack **seq, char **argv, int argc, int order)
@@ -51,6 +51,8 @@ static long int ft_elemloop(char **argv, int count, int begin)
 	long int num;
 
 	elem = 0;
+	if (!*(*(argv + count) + elem))
+		ft_error(2);
 	while (*(*(argv + count) + elem))
 	{
 		if ((*(*(argv + count) + elem) == '-') || (*(*argv + count) + elem) == '+')
@@ -88,3 +90,36 @@ static void ft_strbigger(char **str1, char **str2)
 	if (!ft_memcmp(*str1, *str2, size1))
 		ft_error(4);
 }
+
+//int main(int argc, char **argv)
+//{
+//	t_stack *a;
+//	int order;
+//	//	int		order;
+//
+//	a = NULL;
+//	if (argc <= 1)
+//		ft_error(1);
+//	order = ft_pushswap(&a, argv, 0);
+//	ft_count(&a, order);
+//	//	order = 0;
+//	//	while (a)
+//	//	{
+//	//		if (a->value == ++order)
+//	//		{
+//	//			if (a->value == 20)
+//	//				printf("%s\n", "yes");
+//	//			a = a->next;
+//	//		}
+//	//		else
+//	//		{
+//	//			printf("%s\n", "no");
+//	//			printf("%d\n", a->order);
+//	//			break;
+//	//		}
+//	//		printf("%d %d\n", a->order, a->value);
+//	//		a = a->next;
+//	//	}
+//	//	while (1);
+//	return (0);
+//}

@@ -62,7 +62,7 @@ static void second_loop(t_stack **seq, t_stack **b, int order, int cnt)
 			ft_pushelem(seq, b, "pb\n");
 			*b = settings(b);
 			if ((*b)->next && (*b)->order >= order * 0.75)
-				ft_rotate(b, "pb\n");
+				ft_rotate(b, "rb\n");
 		}
 	}
 }
@@ -259,17 +259,7 @@ static void sort_b(t_stack **seq, t_stack **b, int size_b, int order)
 {
 	int back_b;
 	int last;
-	int value;
-	int count;
 
-	count = 0;
-	value = (*seq)->value;
-	while (count == 0 || (*seq)->value != value)
-	{
-		printf("%d\n", (*seq)->value);
-		ft_rotate(seq, 0);
-		count++;
-	}
 	ft_re_rotate(seq, 0);
 	last = (*seq)->order;
 	ft_rotate(seq, 0);
@@ -285,14 +275,6 @@ static void sort_b(t_stack **seq, t_stack **b, int size_b, int order)
 	else if (back_b > 0 && back_b != size_b && back_b >= size_b / 2)
 		while (size_b != back_b++)
 			ft_rotate(b, 0);
-	count = 0;
-	value = (*seq)->value;
-	while (count == 0 || (*seq)->value != value)
-	{
-		printf("%d\n", (*seq)->value);
-		ft_rotate(seq, 0);
-		count++;
-	}
 }
 
 static int b_turns(t_stack **seq, t_stack **b, int size_b, int order)
