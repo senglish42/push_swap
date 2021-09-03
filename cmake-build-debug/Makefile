@@ -129,29 +129,53 @@ push_swap/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
-bonus/checker.o: bonus/checker.c.o
-.PHONY : bonus/checker.o
+bonus/ft_checker.o: bonus/ft_checker.c.o
+.PHONY : bonus/ft_checker.o
 
 # target to build an object file
-bonus/checker.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/checker.c.o
-.PHONY : bonus/checker.c.o
+bonus/ft_checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/ft_checker.c.o
+.PHONY : bonus/ft_checker.c.o
 
-bonus/checker.i: bonus/checker.c.i
-.PHONY : bonus/checker.i
+bonus/ft_checker.i: bonus/ft_checker.c.i
+.PHONY : bonus/ft_checker.i
 
 # target to preprocess a source file
-bonus/checker.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/checker.c.i
-.PHONY : bonus/checker.c.i
+bonus/ft_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/ft_checker.c.i
+.PHONY : bonus/ft_checker.c.i
 
-bonus/checker.s: bonus/checker.c.s
-.PHONY : bonus/checker.s
+bonus/ft_checker.s: bonus/ft_checker.c.s
+.PHONY : bonus/ft_checker.s
 
 # target to generate assembly for a file
-bonus/checker.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/checker.c.s
-.PHONY : bonus/checker.c.s
+bonus/ft_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/ft_checker.c.s
+.PHONY : bonus/ft_checker.c.s
+
+bonus/ft_make.o: bonus/ft_make.c.o
+.PHONY : bonus/ft_make.o
+
+# target to build an object file
+bonus/ft_make.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/ft_make.c.o
+.PHONY : bonus/ft_make.c.o
+
+bonus/ft_make.i: bonus/ft_make.c.i
+.PHONY : bonus/ft_make.i
+
+# target to preprocess a source file
+bonus/ft_make.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/ft_make.c.i
+.PHONY : bonus/ft_make.c.i
+
+bonus/ft_make.s: bonus/ft_make.c.s
+.PHONY : bonus/ft_make.s
+
+# target to generate assembly for a file
+bonus/ft_make.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/ft_make.c.s
+.PHONY : bonus/ft_make.c.s
 
 bonus/get_next_line.o: bonus/get_next_line.c.o
 .PHONY : bonus/get_next_line.o
@@ -176,6 +200,30 @@ bonus/get_next_line.s: bonus/get_next_line.c.s
 bonus/get_next_line.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/get_next_line.c.s
 .PHONY : bonus/get_next_line.c.s
+
+bonus/main.o: bonus/main.c.o
+.PHONY : bonus/main.o
+
+# target to build an object file
+bonus/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.o
+.PHONY : bonus/main.c.o
+
+bonus/main.i: bonus/main.c.i
+.PHONY : bonus/main.i
+
+# target to preprocess a source file
+bonus/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.i
+.PHONY : bonus/main.c.i
+
+bonus/main.s: bonus/main.c.s
+.PHONY : bonus/main.s
+
+# target to generate assembly for a file
+bonus/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.s
+.PHONY : bonus/main.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 .PHONY : libft/ft_atoi.o
@@ -1242,12 +1290,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push_swap"
-	@echo "... bonus/checker.o"
-	@echo "... bonus/checker.i"
-	@echo "... bonus/checker.s"
+	@echo "... bonus/ft_checker.o"
+	@echo "... bonus/ft_checker.i"
+	@echo "... bonus/ft_checker.s"
+	@echo "... bonus/ft_make.o"
+	@echo "... bonus/ft_make.i"
+	@echo "... bonus/ft_make.s"
 	@echo "... bonus/get_next_line.o"
 	@echo "... bonus/get_next_line.i"
 	@echo "... bonus/get_next_line.s"
+	@echo "... bonus/main.o"
+	@echo "... bonus/main.i"
+	@echo "... bonus/main.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

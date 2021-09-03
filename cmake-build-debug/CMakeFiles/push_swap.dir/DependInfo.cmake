@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/senglish/Desktop/push_swap/bonus/checker.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/checker.c.o"
+  "/Users/senglish/Desktop/push_swap/bonus/ft_checker.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/ft_checker.c.o"
+  "/Users/senglish/Desktop/push_swap/bonus/ft_make.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/ft_make.c.o"
   "/Users/senglish/Desktop/push_swap/bonus/get_next_line.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/get_next_line.c.o"
+  "/Users/senglish/Desktop/push_swap/bonus/main.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/main.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_atoi.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_atoi.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_bzero.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_bzero.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_calloc.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_calloc.c.o"

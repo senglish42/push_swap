@@ -91,35 +91,3 @@ static void ft_strbigger(char **str1, char **str2)
 		ft_error(4);
 }
 
-//int main(int argc, char **argv)
-//{
-//	t_stack *a;
-//	int order;
-//	//	int		order;
-//
-//	a = NULL;
-//	if (argc <= 1)
-//		ft_error(1);
-//	order = ft_pushswap(&a, argv, 0);
-//	ft_count(&a, order);
-//	//	order = 0;
-//	//	while (a)
-//	//	{
-//	//		if (a->value == ++order)
-//	//		{
-//	//			if (a->value == 20)
-//	//				printf("%s\n", "yes");
-//	//			a = a->next;
-//	//		}
-//	//		else
-//	//		{
-//	//			printf("%s\n", "no");
-//	//			printf("%d\n", a->order);
-//	//			break;
-//	//		}
-//	//		printf("%d %d\n", a->order, a->value);
-//	//		a = a->next;
-//	//	}
-//	//	while (1);
-//	return (0);
-//}

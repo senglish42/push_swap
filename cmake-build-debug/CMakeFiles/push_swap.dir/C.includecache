@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/senglish/Desktop/push_swap/bonus/get_next_line.c
+/Users/senglish/Desktop/push_swap/bonus/ft_checker.c
 ../push_swap.h
 /Users/senglish/Desktop/push_swap/push_swap.h
 
@@ -17,8 +17,10 @@ stdlib.h
 -
 fcntl.h
 -
-stdio.h
--
+
+/Users/senglish/Desktop/push_swap/bonus/main.c
+../push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
 
 /Users/senglish/Desktop/push_swap/libft/libft.h
 stdlib.h

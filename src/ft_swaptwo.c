@@ -6,7 +6,7 @@ void	ft_swaptwo(t_stack **seq, char *str)
 	t_stack	*temp1;
 	t_stack *temp2;
 
-	if (!seq)
+	if (!*seq)
 		return ;
 	temp1 = *seq;
 	temp2 = temp1->next;

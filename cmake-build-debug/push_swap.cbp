@@ -78,13 +78,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/checker.c">
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/ft_checker.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/ft_make.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/get_next_line.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/get_next_line.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/main.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/libft">

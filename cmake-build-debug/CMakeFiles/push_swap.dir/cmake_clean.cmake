@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/push_swap.dir/bonus/checker.c.o"
+  "CMakeFiles/push_swap.dir/bonus/ft_checker.c.o"
+  "CMakeFiles/push_swap.dir/bonus/ft_make.c.o"
   "CMakeFiles/push_swap.dir/bonus/get_next_line.c.o"
+  "CMakeFiles/push_swap.dir/bonus/main.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_atoi.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_bzero.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_calloc.c.o"

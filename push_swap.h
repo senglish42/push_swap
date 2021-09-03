@@ -33,5 +33,8 @@ void	ft_three(t_stack **seq);
 void	ft_error(int code);
 int		ft_pushswap(t_stack **a, char **argv, int argc);
 void	ft_push_to_b(t_stack **seq, t_stack *b, int order);
+void	ft_check(t_stack **a, int order);
+void	ft_make(char *line, t_stack **a, t_stack **b);
+
 
 #endif
