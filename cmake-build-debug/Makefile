@@ -201,30 +201,6 @@ bonus/get_next_line.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/get_next_line.c.s
 .PHONY : bonus/get_next_line.c.s
 
-bonus/main.o: bonus/main.c.o
-.PHONY : bonus/main.o
-
-# target to build an object file
-bonus/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.o
-.PHONY : bonus/main.c.o
-
-bonus/main.i: bonus/main.c.i
-.PHONY : bonus/main.i
-
-# target to preprocess a source file
-bonus/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.i
-.PHONY : bonus/main.c.i
-
-bonus/main.s: bonus/main.c.s
-.PHONY : bonus/main.s
-
-# target to generate assembly for a file
-bonus/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.s
-.PHONY : bonus/main.c.s
-
 libft/ft_atoi.o: libft/ft_atoi.c.o
 .PHONY : libft/ft_atoi.o
 
@@ -1041,6 +1017,30 @@ libft/ft_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
+main.o: main.c.o
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
+.PHONY : main.c.s
+
 src/ft_count.o: src/ft_count.c.o
 .PHONY : src/ft_count.o
 
@@ -1112,6 +1112,30 @@ src/ft_filllist.s: src/ft_filllist.c.s
 src/ft_filllist.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_filllist.c.s
 .PHONY : src/ft_filllist.c.s
+
+src/ft_min.o: src/ft_min.c.o
+.PHONY : src/ft_min.o
+
+# target to build an object file
+src/ft_min.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_min.c.o
+.PHONY : src/ft_min.c.o
+
+src/ft_min.i: src/ft_min.c.i
+.PHONY : src/ft_min.i
+
+# target to preprocess a source file
+src/ft_min.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_min.c.i
+.PHONY : src/ft_min.c.i
+
+src/ft_min.s: src/ft_min.c.s
+.PHONY : src/ft_min.s
+
+# target to generate assembly for a file
+src/ft_min.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_min.c.s
+.PHONY : src/ft_min.c.s
 
 src/ft_order.o: src/ft_order.c.o
 .PHONY : src/ft_order.o
@@ -1257,6 +1281,54 @@ src/ft_rotate.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_rotate.c.s
 .PHONY : src/ft_rotate.c.s
 
+src/ft_sort.o: src/ft_sort.c.o
+.PHONY : src/ft_sort.o
+
+# target to build an object file
+src/ft_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort.c.o
+.PHONY : src/ft_sort.c.o
+
+src/ft_sort.i: src/ft_sort.c.i
+.PHONY : src/ft_sort.i
+
+# target to preprocess a source file
+src/ft_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort.c.i
+.PHONY : src/ft_sort.c.i
+
+src/ft_sort.s: src/ft_sort.c.s
+.PHONY : src/ft_sort.s
+
+# target to generate assembly for a file
+src/ft_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort.c.s
+.PHONY : src/ft_sort.c.s
+
+src/ft_sort_b.o: src/ft_sort_b.c.o
+.PHONY : src/ft_sort_b.o
+
+# target to build an object file
+src/ft_sort_b.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_b.c.o
+.PHONY : src/ft_sort_b.c.o
+
+src/ft_sort_b.i: src/ft_sort_b.c.i
+.PHONY : src/ft_sort_b.i
+
+# target to preprocess a source file
+src/ft_sort_b.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_b.c.i
+.PHONY : src/ft_sort_b.c.i
+
+src/ft_sort_b.s: src/ft_sort_b.c.s
+.PHONY : src/ft_sort_b.s
+
+# target to generate assembly for a file
+src/ft_sort_b.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort_b.c.s
+.PHONY : src/ft_sort_b.c.s
+
 src/ft_swaptwo.o: src/ft_swaptwo.c.o
 .PHONY : src/ft_swaptwo.o
 
@@ -1281,6 +1353,30 @@ src/ft_swaptwo.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swaptwo.c.s
 .PHONY : src/ft_swaptwo.c.s
 
+src/ft_turns.o: src/ft_turns.c.o
+.PHONY : src/ft_turns.o
+
+# target to build an object file
+src/ft_turns.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_turns.c.o
+.PHONY : src/ft_turns.c.o
+
+src/ft_turns.i: src/ft_turns.c.i
+.PHONY : src/ft_turns.i
+
+# target to preprocess a source file
+src/ft_turns.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_turns.c.i
+.PHONY : src/ft_turns.c.i
+
+src/ft_turns.s: src/ft_turns.c.s
+.PHONY : src/ft_turns.s
+
+# target to generate assembly for a file
+src/ft_turns.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_turns.c.s
+.PHONY : src/ft_turns.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1299,9 +1395,6 @@ help:
 	@echo "... bonus/get_next_line.o"
 	@echo "... bonus/get_next_line.i"
 	@echo "... bonus/get_next_line.s"
-	@echo "... bonus/main.o"
-	@echo "... bonus/main.i"
-	@echo "... bonus/main.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -1404,6 +1497,9 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/ft_count.o"
 	@echo "... src/ft_count.i"
 	@echo "... src/ft_count.s"
@@ -1413,6 +1509,9 @@ help:
 	@echo "... src/ft_filllist.o"
 	@echo "... src/ft_filllist.i"
 	@echo "... src/ft_filllist.s"
+	@echo "... src/ft_min.o"
+	@echo "... src/ft_min.i"
+	@echo "... src/ft_min.s"
 	@echo "... src/ft_order.o"
 	@echo "... src/ft_order.i"
 	@echo "... src/ft_order.s"
@@ -1431,9 +1530,18 @@ help:
 	@echo "... src/ft_rotate.o"
 	@echo "... src/ft_rotate.i"
 	@echo "... src/ft_rotate.s"
+	@echo "... src/ft_sort.o"
+	@echo "... src/ft_sort.i"
+	@echo "... src/ft_sort.s"
+	@echo "... src/ft_sort_b.o"
+	@echo "... src/ft_sort_b.i"
+	@echo "... src/ft_sort_b.s"
 	@echo "... src/ft_swaptwo.o"
 	@echo "... src/ft_swaptwo.i"
 	@echo "... src/ft_swaptwo.s"
+	@echo "... src/ft_turns.o"
+	@echo "... src/ft_turns.i"
+	@echo "... src/ft_turns.s"
 .PHONY : help
 
 

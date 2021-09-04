@@ -35,6 +35,18 @@ int		ft_pushswap(t_stack **a, char **argv, int argc);
 void	ft_push_to_b(t_stack **seq, t_stack *b, int order);
 void	ft_check(t_stack **a, int order);
 void	ft_make(char *line, t_stack **a, t_stack **b);
-
+void	sort_b(t_stack **seq, t_stack **b, int size_b, int order);
+void	b_rotate(t_stack **seq, t_stack **b);
+void	top_to_bottom(t_stack **seq);
+int		reverse_upper(t_stack **seq, t_stack **b, int min, int size_b, int order);
+int		reverse_below(t_stack **seq, t_stack **b, int min, int size_b, int order);
+int		straight_below(t_stack **seq, t_stack **b, int min, int size_b, int order);
+int		straight_upper(t_stack **seq, t_stack **b, int min, int size_b, int order);
+int		rev_or_str(t_stack **seq, t_stack **b, int min);
+void	a_b_str(t_stack **seq, t_stack **b);
+void	a_b_rev(t_stack **seq, t_stack **b);
+void	a_rev_b_str(t_stack **seq, t_stack **b);
+void	a_str_b_rev(t_stack **seq, t_stack **b);
+void	b_null(t_stack **seq, t_stack **b);
 
 #endif

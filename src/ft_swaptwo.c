@@ -1,5 +1,4 @@
 #include "../push_swap.h"
-#include "stdio.h"
 
 void	ft_swaptwo(t_stack **seq, char *str)
 {
