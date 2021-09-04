@@ -90,6 +90,9 @@
 		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/get_next_line.h">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/senglish/Desktop/push_swap/bonus/main.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/libft">
 			<Option target="push_swap"/>
 		</Unit>
@@ -195,9 +198,6 @@
 		<Unit filename="/Users/senglish/Desktop/push_swap/libft/ft_toupper.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/senglish/Desktop/push_swap/main.c">
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
@@ -238,6 +238,9 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/src/ft_swaptwo.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/senglish/Desktop/push_swap/src/ft_three.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/senglish/Desktop/push_swap/src/ft_turns.c">

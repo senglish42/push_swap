@@ -1,6 +1,6 @@
 #include "../push_swap.h"
 
-void b_null(t_stack **seq, t_stack **b)
+void	b_null(t_stack **seq, t_stack **b)
 {
 	if ((*seq)->order > (*b)->order)
 	{
@@ -14,9 +14,9 @@ void b_null(t_stack **seq, t_stack **b)
 	}
 }
 
-void a_b_str(t_stack **seq, t_stack **b)
+void	a_b_str(t_stack **seq, t_stack **b)
 {
-	int num;
+	int	num;
 
 	num = -1;
 	if ((*b)->b_rotate == 1 && ((*seq)->a_rotate == 1 && ++num))
@@ -37,9 +37,9 @@ void a_b_str(t_stack **seq, t_stack **b)
 		ft_rotate(b, "rb\n");
 }
 
-void a_b_rev(t_stack **seq, t_stack **b)
+void	a_b_rev(t_stack **seq, t_stack **b)
 {
-	int num;
+	int	num;
 
 	num = -1;
 	while (++num != (*b)->a_rotate && num != (*b)->b_rotate)
@@ -54,9 +54,9 @@ void a_b_rev(t_stack **seq, t_stack **b)
 		ft_re_rotate(b, "rrb\n");
 }
 
-void a_rev_b_str(t_stack **seq, t_stack **b)
+void	a_rev_b_str(t_stack **seq, t_stack **b)
 {
-	int num;
+	int	num;
 
 	num = 0;
 	while ((*b)->a_rotate > num && ++num)
@@ -66,9 +66,9 @@ void a_rev_b_str(t_stack **seq, t_stack **b)
 		ft_rotate(b, "rb\n");
 }
 
-void a_str_b_rev(t_stack **seq, t_stack **b)
+void	a_str_b_rev(t_stack **seq, t_stack **b)
 {
-	int num;
+	int	num;
 
 	num = 0;
 	while ((*b)->a_rotate > num && ++num)

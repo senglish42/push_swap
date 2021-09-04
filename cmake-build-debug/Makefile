@@ -201,6 +201,30 @@ bonus/get_next_line.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/get_next_line.c.s
 .PHONY : bonus/get_next_line.c.s
 
+bonus/main.o: bonus/main.c.o
+.PHONY : bonus/main.o
+
+# target to build an object file
+bonus/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.o
+.PHONY : bonus/main.c.o
+
+bonus/main.i: bonus/main.c.i
+.PHONY : bonus/main.i
+
+# target to preprocess a source file
+bonus/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.i
+.PHONY : bonus/main.c.i
+
+bonus/main.s: bonus/main.c.s
+.PHONY : bonus/main.s
+
+# target to generate assembly for a file
+bonus/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/bonus/main.c.s
+.PHONY : bonus/main.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 .PHONY : libft/ft_atoi.o
 
@@ -1017,30 +1041,6 @@ libft/ft_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
-main.o: main.c.o
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
-.PHONY : main.c.s
-
 src/ft_count.o: src/ft_count.c.o
 .PHONY : src/ft_count.o
 
@@ -1353,6 +1353,30 @@ src/ft_swaptwo.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_swaptwo.c.s
 .PHONY : src/ft_swaptwo.c.s
 
+src/ft_three.o: src/ft_three.c.o
+.PHONY : src/ft_three.o
+
+# target to build an object file
+src/ft_three.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_three.c.o
+.PHONY : src/ft_three.c.o
+
+src/ft_three.i: src/ft_three.c.i
+.PHONY : src/ft_three.i
+
+# target to preprocess a source file
+src/ft_three.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_three.c.i
+.PHONY : src/ft_three.c.i
+
+src/ft_three.s: src/ft_three.c.s
+.PHONY : src/ft_three.s
+
+# target to generate assembly for a file
+src/ft_three.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_three.c.s
+.PHONY : src/ft_three.c.s
+
 src/ft_turns.o: src/ft_turns.c.o
 .PHONY : src/ft_turns.o
 
@@ -1395,6 +1419,9 @@ help:
 	@echo "... bonus/get_next_line.o"
 	@echo "... bonus/get_next_line.i"
 	@echo "... bonus/get_next_line.s"
+	@echo "... bonus/main.o"
+	@echo "... bonus/main.i"
+	@echo "... bonus/main.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -1497,9 +1524,6 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... src/ft_count.o"
 	@echo "... src/ft_count.i"
 	@echo "... src/ft_count.s"
@@ -1539,6 +1563,9 @@ help:
 	@echo "... src/ft_swaptwo.o"
 	@echo "... src/ft_swaptwo.i"
 	@echo "... src/ft_swaptwo.s"
+	@echo "... src/ft_three.o"
+	@echo "... src/ft_three.i"
+	@echo "... src/ft_three.s"
 	@echo "... src/ft_turns.o"
 	@echo "... src/ft_turns.i"
 	@echo "... src/ft_turns.s"

@@ -2,14 +2,16 @@ CFILE =     src/ft_pushswap.c	src/ft_filllist.c	src/ft_order.c\
 			src/ft_pushelem.c	src/ft_rotate.c		src/ft_param.c\
 			src/ft_re_rotate.c	src/ft_count.c		src/ft_error.c\
 			src/ft_swaptwo.c	src/ft_sort_b.c		src/ft_min.c\
-			src/ft_turns.c		src/ft_sort.c		main.c
+			src/ft_turns.c		src/ft_sort.c		src/ft_three.c\
+			main.c
 OFILE = $(CFILE:.c=.o)
 BFILE =		bonus/get_next_line.c	bonus/ft_checker.c		bonus/main.c\
 			src/ft_filllist.c		src/ft_order.c			src/ft_swaptwo.c\
             src/ft_pushelem.c		src/ft_rotate.c			src/ft_param.c\
             src/ft_re_rotate.c		src/ft_count.c			src/ft_error.c\
             src/ft_pushswap.c		src/ft_sort_b.c			src/ft_min.c\
-            src/ft_turns.c			src/ft_sort.c			bonus/ft_make.c
+            src/ft_turns.c			src/ft_sort.c			src/ft_three.c\
+            bonus/ft_make.c
 BOFILE = $(BFILE:.c=.o)
 CFLAGS = -Wall -Wextra -Werror -I libft.h
 CC = clang

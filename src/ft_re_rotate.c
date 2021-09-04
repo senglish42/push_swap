@@ -1,11 +1,11 @@
 #include "../push_swap.h"
 
-void ft_re_rotate(t_stack **seq, char *str)
+void	ft_re_rotate(t_stack **seq, char *str)
 {
-	t_stack 	*copy;
-	t_stack 	*copy2;
+	t_stack	*copy;
+	t_stack	*copy2;
 
-	if (!*seq)
+	if (!*seq || !(*seq)->next)
 		return ;
 	copy = *seq;
 	copy2 = NULL;

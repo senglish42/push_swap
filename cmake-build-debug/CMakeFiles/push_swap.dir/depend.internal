@@ -12,6 +12,11 @@ CMakeFiles/push_swap.dir/bonus/ft_make.c.o
  /Users/senglish/Desktop/push_swap/libft/libft.h
  /Users/senglish/Desktop/push_swap/push_swap.h
 CMakeFiles/push_swap.dir/bonus/get_next_line.c.o
+CMakeFiles/push_swap.dir/bonus/main.c.o
+ /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
+ /Users/senglish/Desktop/push_swap/bonus/main.c
+ /Users/senglish/Desktop/push_swap/libft/libft.h
+ /Users/senglish/Desktop/push_swap/push_swap.h
 CMakeFiles/push_swap.dir/libft/ft_atoi.c.o
  /Users/senglish/Desktop/push_swap/libft/ft_atoi.c
  /Users/senglish/Desktop/push_swap/libft/libft.h
@@ -114,11 +119,6 @@ CMakeFiles/push_swap.dir/libft/ft_tolower.c.o
 CMakeFiles/push_swap.dir/libft/ft_toupper.c.o
  /Users/senglish/Desktop/push_swap/libft/ft_toupper.c
  /Users/senglish/Desktop/push_swap/libft/libft.h
-CMakeFiles/push_swap.dir/main.c.o
- /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
- /Users/senglish/Desktop/push_swap/libft/libft.h
- /Users/senglish/Desktop/push_swap/main.c
- /Users/senglish/Desktop/push_swap/push_swap.h
 CMakeFiles/push_swap.dir/src/ft_count.c.o
  /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
  /Users/senglish/Desktop/push_swap/libft/libft.h
@@ -184,6 +184,11 @@ CMakeFiles/push_swap.dir/src/ft_swaptwo.c.o
  /Users/senglish/Desktop/push_swap/libft/libft.h
  /Users/senglish/Desktop/push_swap/push_swap.h
  /Users/senglish/Desktop/push_swap/src/ft_swaptwo.c
+CMakeFiles/push_swap.dir/src/ft_three.c.o
+ /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
+ /Users/senglish/Desktop/push_swap/libft/libft.h
+ /Users/senglish/Desktop/push_swap/push_swap.h
+ /Users/senglish/Desktop/push_swap/src/ft_three.c
 CMakeFiles/push_swap.dir/src/ft_turns.c.o
  /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
  /Users/senglish/Desktop/push_swap/libft/libft.h

@@ -2,7 +2,7 @@
 
 void	ft_numintolist(t_stack **seq, t_stack *new)
 {
-	t_stack *seqnum;
+	t_stack	*seqnum;
 
 	if (*seq == NULL)
 		*seq = new;
@@ -14,7 +14,7 @@ void	ft_numintolist(t_stack **seq, t_stack *new)
 	}
 }
 
-t_stack *ft_lstlast(t_stack *seq)
+t_stack	*ft_lstlast(t_stack *seq)
 {
 	while (seq->next)
 		seq = seq->next;
@@ -23,7 +23,7 @@ t_stack *ft_lstlast(t_stack *seq)
 
 t_stack	*ft_lstnew(int content, int order)
 {
-	t_stack *seq;
+	t_stack	*seq;
 
 	seq = (t_stack *)malloc(sizeof(t_stack));
 	if (!seq)

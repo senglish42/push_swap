@@ -2,7 +2,7 @@
 
 long int	ft_atoi(const char *str)
 {
-	int	a;
+	int			a;
 	long int	b;
 	long int	c;
 

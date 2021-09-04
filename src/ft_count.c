@@ -2,18 +2,20 @@
 
 static void	second_loop(t_stack **seq, t_stack **b, int order, int cnt)
 {
-	int count;
+	int	count;
 
 	count = -1;
 	while ((*seq)->next && count++ != order - cnt)
 	{
-		if ((*seq)->loop == 'x')
+		if ((*seq)->order == order || (*seq)->order == order - 1
+			|| (*seq)->order == order - 2)
 		{
-			if ((*seq)->order != order)
-				(*seq)->loop = 'o';
+			if ((*seq)->order == order)
+				(*seq)->loop = 'x';
 			ft_rotate(seq, "ra\n");
 		}
-		else if ((*seq)->order <= (order + 1) * 0.25 || (*seq)->order > (order + 1) * 0.75)
+		else if ((*seq)->order <= (order + 1) * 0.25
+			|| (*seq)->order > (order + 1) * 0.75)
 		{
 			ft_pushelem(seq, b, "pb\n");
 			*b = settings(b);
@@ -25,14 +27,15 @@ static void	second_loop(t_stack **seq, t_stack **b, int order, int cnt)
 
 static int	first_loop(t_stack **seq, t_stack **b, int order)
 {
-	int count;
-	int cnt;
+	int	count;
+	int	cnt;
 
 	count = -1;
 	cnt = 0;
 	while ((*seq)->next && count++ != order)
 	{
-		if ((*seq)->order > (order + 1) * 0.25 && (*seq)->order <= (order + 1) * 0.75 && (*seq)->order < order - 2)
+		if ((*seq)->order > (order + 1) * 0.25
+			&& (*seq)->order <= (order + 1) * 0.75 && (*seq)->order < order - 2)
 		{
 			ft_pushelem(seq, b, "pb\n");
 			*b = settings(b);
@@ -41,20 +44,42 @@ static int	first_loop(t_stack **seq, t_stack **b, int order)
 			cnt++;
 		}
 		else
+			ft_rotate(seq, "ra\n");
+	}
+	return (cnt);
+}
+
+static void	small_num(t_stack **seq, t_stack **b, int order)
+{
+	int	count;
+
+	count = -1;
+	while (count++ != order)
+	{
+		if ((*seq)->order >= order - 2)
 		{
-			if ((*seq)->order == order || (*seq)->order == order - 1 || (*seq)->order == order - 2)
+			if ((*seq)->order == order)
 				(*seq)->loop = 'x';
 			ft_rotate(seq, "ra\n");
 		}
+		else
+		{
+			ft_pushelem(seq, b, "pb\n");
+			*b = settings(b);
+			if ((*b)->next && (*b)->order >= order * 0.5)
+				ft_rotate(b, "rb\n");
+		}
 	}
-	return (cnt);
 }
 
 void	ft_push_to_b(t_stack **seq, t_stack *b, int order)
 {
 	int	count;
 
-	second_loop(seq, &b, order, first_loop(seq, &b, order));
+	if ((order + 1) * 0.5 <= 3)
+		small_num(seq, &b, order);
+	else
+		second_loop(seq, &b, order, first_loop(seq, &b, order));
 	ft_three(seq);
 	count = ++order;
 	while (b)
@@ -74,9 +99,9 @@ void	ft_push_to_b(t_stack **seq, t_stack *b, int order)
 
 void	ft_count(t_stack **seq, int order)
 {
-	t_stack *temp;
-	t_stack *b;
-	int count;
+	t_stack	*temp;
+	t_stack	*b;
+	int		count;
 
 	temp = *seq;
 	b = NULL;
@@ -87,33 +112,13 @@ void	ft_count(t_stack **seq, int order)
 			count += 1;
 		temp = temp->next;
 	}
+	temp = NULL;
 	if (++count == order)
 		return ;
 	if (order == 2 && ((*seq)->order > (*seq)->next->order))
-		ft_swaptwo(seq,"sa\n");
+		ft_swaptwo(seq, "sa\n");
 	else if (order == 3)
 		ft_three(seq);
 	else
 		ft_push_to_b(seq, b, --order);
-}
-
-void	ft_three(t_stack **seq)
-{
-	if ((*seq)->order < (*seq)->next->order && (*seq)->next->order > (*seq)->next->next->order
-	&& (*seq)->order < (*seq)->next->next->order) //021
-		{
-		ft_swaptwo(seq, "sa\n");
-		ft_rotate(seq, "ra\n");
-		}
-	else if ((*seq)->order > (*seq)->next->order && (*seq)->order < (*seq)->next->next->order) //102
-		ft_swaptwo(seq, "sa\n");
-	else if ((*seq)->order < (*seq)->next->order && (*seq)->order > (*seq)->next->next->order) //120
-		ft_re_rotate(seq, "rra\n");
-	else if ((*seq)->order > (*seq)->next->order && (*seq)->next->order < (*seq)->next->next->order) //201
-		ft_rotate(seq, "ra\n");
-	else if ((*seq)->order > (*seq)->next->order && (*seq)->next->order > (*seq)->next->next->order) //210
-		{
-		ft_swaptwo(seq, "sa\n");
-		ft_re_rotate(seq, "rra\n");
-		}
 }

@@ -11,6 +11,11 @@ CMakeFiles/push_swap.dir/bonus/ft_make.c.o: \
  ../bonus/get_next_line.h \
  ../libft/libft.h \
  ../push_swap.h
+CMakeFiles/push_swap.dir/bonus/main.c.o: \
+ ../bonus/get_next_line.h \
+ ../bonus/main.c \
+ ../libft/libft.h \
+ ../push_swap.h
 CMakeFiles/push_swap.dir/libft/ft_atoi.c.o: \
  ../libft/ft_atoi.c \
  ../libft/libft.h
@@ -113,11 +118,6 @@ CMakeFiles/push_swap.dir/libft/ft_tolower.c.o: \
 CMakeFiles/push_swap.dir/libft/ft_toupper.c.o: \
  ../libft/ft_toupper.c \
  ../libft/libft.h
-CMakeFiles/push_swap.dir/main.c.o: \
- ../bonus/get_next_line.h \
- ../libft/libft.h \
- ../main.c \
- ../push_swap.h
 CMakeFiles/push_swap.dir/src/ft_count.c.o: \
  ../bonus/get_next_line.h \
  ../libft/libft.h \
@@ -183,6 +183,11 @@ CMakeFiles/push_swap.dir/src/ft_swaptwo.c.o: \
  ../libft/libft.h \
  ../push_swap.h \
  ../src/ft_swaptwo.c
+CMakeFiles/push_swap.dir/src/ft_three.c.o: \
+ ../bonus/get_next_line.h \
+ ../libft/libft.h \
+ ../push_swap.h \
+ ../src/ft_three.c
 CMakeFiles/push_swap.dir/src/ft_turns.c.o: \
  ../bonus/get_next_line.h \
  ../libft/libft.h \

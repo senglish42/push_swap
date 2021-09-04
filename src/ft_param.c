@@ -6,7 +6,6 @@ t_stack	*settings(t_stack **b)
 
 	set = *b;
 	*b = set->next;
-
 	set->top = 0;
 	set->b_rotate = 0;
 	set->reverse = 0;

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/senglish/Desktop/push_swap/bonus/ft_make.c
+../push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
+
 /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
 unistd.h
 -
@@ -20,15 +24,21 @@ stdlib.h
 unistd.h
 -
 
-/Users/senglish/Desktop/push_swap/main.c
-push_swap.h
-/Users/senglish/Desktop/push_swap/push_swap.h
-stdio.h
--
-
 /Users/senglish/Desktop/push_swap/push_swap.h
 ./libft/libft.h
 /Users/senglish/Desktop/push_swap/libft/libft.h
 ./bonus/get_next_line.h
 /Users/senglish/Desktop/push_swap/bonus/get_next_line.h
+
+/Users/senglish/Desktop/push_swap/src/ft_re_rotate.c
+../push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
+
+/Users/senglish/Desktop/push_swap/src/ft_rotate.c
+../push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
+
+/Users/senglish/Desktop/push_swap/src/ft_swaptwo.c
+../push_swap.h
+/Users/senglish/Desktop/push_swap/push_swap.h
 

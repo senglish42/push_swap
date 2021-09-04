@@ -53,7 +53,8 @@ static char	**ft_fillarray(char **res, char const *s, char c)
 	{
 		if (*(s + d) != c)
 		{
-			res[elem] = (char *)malloc(sizeof(char)* ft_strcount(s + d, c) + 1);
+			res[elem] = (char *)malloc(sizeof(char)
+					* ft_strcount(s + d, c) + 1);
 			if (!res[elem])
 				return (ft_freenavalniy(res, elem));
 			ft_strlcpy(res[elem++], &s[d], ft_strcount(s + d, c) + 1);

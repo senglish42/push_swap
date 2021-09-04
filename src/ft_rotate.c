@@ -2,10 +2,10 @@
 
 void	ft_rotate(t_stack **seq, char *str)
 {
-	t_stack *temp1;
-	t_stack *temp2;
+	t_stack	*temp1;
+	t_stack	*temp2;
 
-	if (!*seq)
+	if (!*seq || !(*seq)->next)
 		return ;
 	temp1 = *seq;
 	temp2 = temp1->next;
@@ -16,9 +16,9 @@ void	ft_rotate(t_stack **seq, char *str)
 		ft_putstr_fd(str, 1);
 }
 
-void ft_lstadd_back(t_stack **lst, t_stack *new)
+void	ft_lstadd_back(t_stack **lst, t_stack *new)
 {
-	t_stack *temp;
+	t_stack	*temp;
 
 	if (!new)
 		return ;
@@ -31,6 +31,3 @@ void	ft_lstadd_front(t_stack **lst, t_stack *new)
 	new->next = *lst;
 	*lst = new;
 }
-
-
-

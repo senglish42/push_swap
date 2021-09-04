@@ -1,18 +1,22 @@
 #include "../push_swap.h"
 
-int get_next_line(char **line)
+size_t	get_next_line(char **line)
 {
-	char ch;
-	char *buf;
-	int i;
-	int res;
+	char	ch;
+	char	*buf;
+	int		i;
+	size_t	res;
 
 	ch = '\0';
 	i = 0;
 	buf = malloc(3);
 	*line = buf;
-	while ((res = read(0, &ch, 1)) > 0 && ch != '\n')
+	res = read(0, &ch, 1);
+	while (res > 0 && ch != '\n')
+	{
 		buf[i++] = ch;
+		res = read(0, &ch, 1);
+	}
 	buf[i] = '\0';
 	return (res);
 }

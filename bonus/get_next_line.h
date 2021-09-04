@@ -7,6 +7,6 @@
 # include <stdlib.h>
 # include <fcntl.h>
 
-int		get_next_line(char **line);
+size_t	get_next_line(char **line);
 
 #endif

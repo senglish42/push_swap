@@ -1,32 +1,9 @@
 #include "../push_swap.h"
 
-static int *ft_charorder(int *str, t_stack *temp);
-void ft_order(t_stack **seq, int order)
+static int	*ft_charorder(int *str, t_stack *temp)
 {
-	t_stack *temp;
-	int *str;
-
-	if (!*seq)
-		return;
-	temp = *seq;
-	str = (int *) malloc(sizeof(int) * order + 1);
-	*(str + order) = '\0';
-	ft_charorder(str, temp);
-	while (order-- > 0)
-	{
-		temp = *seq;
-		while (order >= 0 && (*(str + order) != temp->value))
-			temp = temp->next;
-		temp->order = order;
-	}
-	free(str);
-	str = NULL;
-}
-
-static int *ft_charorder(int *str, t_stack *temp)
-{
-	int countdown;
-	int order;
+	int	countdown;
+	int	order;
 
 	order = -1;
 	while (temp)
@@ -45,4 +22,26 @@ static int *ft_charorder(int *str, t_stack *temp)
 		temp = temp->next;
 	}
 	return (str);
+}
+
+void	ft_order(t_stack **seq, int order)
+{
+	t_stack	*temp;
+	int		*str;
+
+	if (!*seq)
+		return ;
+	temp = *seq;
+	str = (int *) malloc(sizeof(int) * order + 1);
+	*(str + order) = '\0';
+	ft_charorder(str, temp);
+	while (order-- > 0)
+	{
+		temp = *seq;
+		while (order >= 0 && (*(str + order) != temp->value))
+			temp = temp->next;
+		temp->order = order;
+	}
+	free(str);
+	str = NULL;
 }

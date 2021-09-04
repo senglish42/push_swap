@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/senglish/Desktop/push_swap/bonus/ft_checker.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/ft_checker.c.o"
   "/Users/senglish/Desktop/push_swap/bonus/ft_make.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/ft_make.c.o"
   "/Users/senglish/Desktop/push_swap/bonus/get_next_line.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/get_next_line.c.o"
+  "/Users/senglish/Desktop/push_swap/bonus/main.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/bonus/main.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_atoi.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_atoi.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_bzero.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_bzero.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_calloc.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_calloc.c.o"
@@ -45,7 +46,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/senglish/Desktop/push_swap/libft/ft_substr.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_substr.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_tolower.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "/Users/senglish/Desktop/push_swap/libft/ft_toupper.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
-  "/Users/senglish/Desktop/push_swap/main.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
   "/Users/senglish/Desktop/push_swap/src/ft_count.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_count.c.o"
   "/Users/senglish/Desktop/push_swap/src/ft_error.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_error.c.o"
   "/Users/senglish/Desktop/push_swap/src/ft_filllist.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_filllist.c.o"
@@ -59,6 +59,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/senglish/Desktop/push_swap/src/ft_sort.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort.c.o"
   "/Users/senglish/Desktop/push_swap/src/ft_sort_b.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort_b.c.o"
   "/Users/senglish/Desktop/push_swap/src/ft_swaptwo.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_swaptwo.c.o"
+  "/Users/senglish/Desktop/push_swap/src/ft_three.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_three.c.o"
   "/Users/senglish/Desktop/push_swap/src/ft_turns.c" "/Users/senglish/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_turns.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

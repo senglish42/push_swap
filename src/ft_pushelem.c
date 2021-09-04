@@ -1,8 +1,8 @@
 #include "../push_swap.h"
 
-void ft_pushelem(t_stack **a, t_stack **b, char *str)
+void	ft_pushelem(t_stack **a, t_stack **b, char *str)
 {
-	t_stack *temp;
+	t_stack	*temp;
 
 	if (!*a)
 		return ;

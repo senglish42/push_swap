@@ -1,11 +1,11 @@
 #include "../push_swap.h"
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	t_stack *a;
-	t_stack *b;
-	char *line;
-	int order;
+	t_stack	*a;
+	t_stack	*b;
+	char	*line;
+	int		order;
 
 	a = NULL;
 	b = NULL;
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		line = NULL;
 	}
 	if (!a)
-		ft_putstr_fd("KO", 1);
+		ft_putstr_fd("Error", 1);
 	else
 		ft_check(&a, order);
 	return (0);

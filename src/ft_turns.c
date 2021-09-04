@@ -1,10 +1,10 @@
 #include "../push_swap.h"
 
- int rev_or_str(t_stack **seq, t_stack **b, int min)
+int	rev_or_str(t_stack **seq, t_stack **b, int min)
 {
 	int	num;
-	int top;
-	int reverse;
+	int	top;
+	int	reverse;
 
 	num = (*b)->value;
 	reverse = (*b)->reverse;
